@@ -1,0 +1,20 @@
+---
+
+- hosts: localhost
+  vars:
+    myapp:
+      - name: app1
+        somesetting: nope
+        othersetting: yep
+        dontyouhatepants: yep
+      - name: app2
+        somesetting: yep
+        othersetting: yep
+        dontyouhatepants: nope
+  tasks:
+  - name: just an echo
+    shell: /bin/echo "{{ item.name }}"
+    with_items: myapp
+    register: echo
+  - debug: var=item.stdout
+    with_items: echo.results
