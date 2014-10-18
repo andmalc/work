@@ -1,7 +1,7 @@
 # http://www.florentflament.com/blog/git-ssh-docker-container.html
 FROM ubuntu
 
-RUN apt-get -y update && RUN apt-get -y install openssh-server zsh
+RUN apt-get -y update && apt-get --no-install-recommends -y install openssh-server zsh
 
 # Setting openssh
 RUN mkdir /var/run/sshd
