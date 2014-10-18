@@ -1,5 +1,5 @@
 # http://www.florentflament.com/blog/git-ssh-docker-container.html
-FROM ubuntu:14.04
+FROM ubuntu
 
 RUN apt-get -y update
 RUN apt-get -y install openssh-server
