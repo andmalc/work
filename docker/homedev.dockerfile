@@ -1,38 +1,36 @@
-from ubuntu:14.04
+from ubuntu
 
-run apt-get update && apt-get install --no-install-recommends -y git python curl vim-nox rsync zsh tmux python-pip python-virtualenv ssh
+run apt-get update && apt-get install --no-install-recommends -y git python curl vim-nox rsync zsh tmux python-pip python-virtualenv openssh-server
+
+# Setting openssh
+RUN mkdir /var/run/sshd
+RUN sed -i "s/#PasswordAuthentication yes/PasswordAuthentication no/" /etc/ssh/sshd_config
 
 
-# Setup home environment
+### Setup home environment
 run useradd -s /usr/bin/zsh andmalc
-run mkdir /home/andmalc && chown -R andmalc: /home/andmalc
-env HOME /home/andmalc
 
 workdir /home/andmalc
 run mkdir .ssh
-copy andmalc /home/andmalc/.ssh/andmalc
-copy sshconfig /home/andmalc/.ssh/config
-run chmod 600 .ssh/andmalc
-run chmod 600 .ssh/config
+copy files/andmalc /home/andmalc/.ssh/id_rsa
+run cp /home/andmalc/.ssh/id_rsa /home/andmalc/.ssh/authorized_keys
 run touch .ssh/known_hosts
-run ssh-keyscan bitbucket.org >> .ssh/known_hosts
-run chown -R andmalc: .ssh
+run ssh-keyscan bitbucket.org > .ssh/known_hosts
+run chown -R andmalc: /home/andmalc
+run chmod 600 -R /home/andmalc/.ssh
 
 user andmalc
-#run eval `ssh-agent`
-#run ssh-add .ssh/andmalc
-
-run git clone bb:andmalc/config.git
-run git clone bb:andmalc/work.git
+run git clone git@bitbucket.org:andmalc/config.git
+run git clone git@bitbucket.org:andmalc/work.git
 
 # Link in shared parts of the home directory
+run ln -s config/home/.ssh/config
+run ln -s config/home/.ssh/andmalc.pub
 run ln -s config/home/.vimrc
 run ln -s config/home/.tmux.conf
 run ln -s config/home/.zshrc
 run ln -s config/home/.zshenv
-#run source .zshrc
-
-#run pip install 
+run ln -s config/home/.gitconfig
 
 user root
 # Create a shared data volume
@@ -44,6 +42,6 @@ run touch /var/shared/placeholder
 run chown -R andmalc:andmalc /var/shared
 volume /var/shared
 
-user andmalc
-cmd ["/usr/bin/zsh"]
+EXPOSE 22
+cmd ["/usr/sbin/sshd","-D"]
 
