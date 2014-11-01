@@ -3,7 +3,7 @@
   gather_facts: False
   roles:
     - defunctzombie.coreos-bootstrap
-  user: andmalc
+  user: core
     #  sudo: yes
   tasks:
     - name: test connection

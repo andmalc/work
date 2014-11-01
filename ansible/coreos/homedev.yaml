@@ -1,0 +1,13 @@
+- hosts: coreos
+  name: Homedev Running 
+  remote_user: core
+  sudo: true
+  tasks:
+    - name: Verify running
+    - name: launch container
+      docker:
+        image="andmalc/devhome"
+        name="devhome"
+        ports="8080:80"
+        state=running
+
