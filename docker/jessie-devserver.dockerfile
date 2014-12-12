@@ -2,6 +2,7 @@ FROM debian:jessie
 
 MAINTAINER Ozzy Johnson <ozzy.johnson@gmail.com>
 
+ENV PYTHONUNBUFFERED 1
 ENV DEBIAN_FRONTEND noninteractive
 
 # Update and install minimal.
@@ -17,16 +18,24 @@ RUN \
 		  sudo \
 		  aptitude \
 		  vim-nox \
+          wget  \
+		  less \
           r-base \
 		  zsh \
-		  tmux \
+		  tmux &&\
+  apt-get install \ 
+            --yes \
 		  python3.4 \
 		  python3.4-dev \
 		  python3-pip \
-          wget && \
+		  python3-numpy \
+		  pkg-config && \
 # Clean up packages.
-  apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+  apt-get clean 
+
+# Locale fix
+RUN bash -c 'echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
+RUN locale-gen
 
 # SSH server
 RUN mkdir /var/run/sshd
