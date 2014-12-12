@@ -17,6 +17,7 @@ RUN \
             --no-install-recommends \
             --no-install-suggests \
 		  aptitude \
+		  locales \
           build-essential \
 		  openssh-server \
 		  sudo \
@@ -24,10 +25,10 @@ RUN \
           wget  \
 		  less \
 		  zsh \
-		  tmux &&\
+		  tmux 
 
 # Locale fix
-RUN bash -c 'echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
+RUN bash -c 'echo "en_US.UTF-8 UTF-8"' > /etc/locale.gen
 RUN locale-gen
 
 # SSH server
@@ -36,9 +37,11 @@ RUN sed -i "s/#PasswordAuthentication yes/PasswordAuthentication no/" /etc/ssh/s
 
 ## User setup
 run mkdir /root/.ssh
-copy files/andmalc.pub /root/.ssh/authorized_keys
-# Password: openssl passwd -crypt <password>
-RUN useradd <your user name> -s /usr/bin/zsh -u 1001 -G sudo -p <make your own!>
+
+### Fill in the places below between the angle brackets and uncomment
+### Generate a hashed password: openssl passwd -crypt <password>
+# copy <your SSH public key file> /root/.ssh/authorized_keys
+# RUN useradd <your user name> -s /usr/bin/zsh -u 1001 -G sudo -p <make your own!>
 
 # For Data Science Course
 # Install with Recommends and Suggests or matplotlilb won't build
