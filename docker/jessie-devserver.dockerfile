@@ -25,6 +25,7 @@ RUN \
           wget  \
 		  less \
 		  zsh \
+		  git \
 		  tmux 
 
 # Locale fix
@@ -37,11 +38,9 @@ RUN sed -i "s/#PasswordAuthentication yes/PasswordAuthentication no/" /etc/ssh/s
 
 ## User setup
 run mkdir /root/.ssh
-
-### Fill in the places below between the angle brackets and uncomment
-### Generate a hashed password: openssl passwd -crypt <password>
-# copy <your SSH public key file> /root/.ssh/authorized_keys
-# RUN useradd <your user name> -s /usr/bin/zsh -u 1001 -G sudo -p <make your own!>
+copy files/andmalc.pub /root/.ssh/authorized_keys
+# Password: openssl passwd -crypt <password>
+RUN useradd andmalc -s /usr/bin/zsh -u 1001 -G sudo -p USL6ONhp7OB6Y
 
 # For Data Science Course
 # Install with Recommends and Suggests or matplotlilb won't build
@@ -54,14 +53,15 @@ RUN \
 		python3-pip \
 		python3-numpy \
 		pkg-config \
-		ipython-notebook \
+		ipython3 \
+		ipython3-notebook \
 		# required by matplotlib
 		libfreetype6 \
 		libfreetype6-dev && \
 	apt-get clean 
 
 # For newest Pandas
-RUN pip3 install pandas
+RUN pip3 install pandas virtualenvwrapper
 
-EXPOSE 22
+EXPOSE 22 8888
 CMD /usr/sbin/sshd -D
