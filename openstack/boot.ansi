@@ -1,8 +1,0 @@
-/dev/vdc        /home/andmalc/chromiumos        auto    defaults,noauto
-
----
-- hosts: nitrous
-  remote_user: andmalc
-  sudo: yes
-- tasks:
-			
