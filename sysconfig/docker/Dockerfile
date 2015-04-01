@@ -1,1 +1,1 @@
-jessie-devserver.dockerfile
+python-server-app
