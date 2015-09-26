@@ -1,0 +1,5 @@
+
+CoreOS at DO
+http://blog.myjm.de/2015/05/run-your-own-coreos-cluster-on-digitalocean/
+
+
