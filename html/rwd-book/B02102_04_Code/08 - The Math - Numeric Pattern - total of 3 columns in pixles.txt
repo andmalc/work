@@ -1,6 +1,0 @@
-/*
-Chapter 4: CSS Grids, Frameworks, UI Kits and Flexbox
-8 - The Math – Numeric Pattern: total of 3 columns in pixles
-*/
-
-80px + 20px + 80px + 20px + 80px = 280px

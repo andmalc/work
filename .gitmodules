@@ -1,3 +1,0 @@
-[submodule "flask/flask-redis-nginx-example"]
-	path = flask/flask-redis-nginx-example
-	url = https://github.com/realpython/orchestrating-docker

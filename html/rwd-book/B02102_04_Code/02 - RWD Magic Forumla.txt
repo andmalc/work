@@ -1,6 +1,0 @@
-/*
-Chapter 4: CSS Grids, Frameworks, UI Kits and Flexbox
-2 - RWD Magic Forumla
-*/
-
-(target ÷ context) x 100 = result %
