@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Exaile &middot; Music Player for GTK+
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" href="/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/atom+xml" title="Exaile" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="container content">
+    <nav>
+      <a href="/"><img src="/public/exaile.png"></a>
+      <h3>
+        <span id="play">Play It. Enjoy It.</span><br/>
+        Exaile
+      </h3>
+
+      <ul>
+        
+          <li><a href="/download/">Get It</a></li>
+        
+          <li><a href="/screens/">Screenshots</a></li>
+        
+          <li><a href="http://exaile.readthedocs.org">Docs</a></li>
+        
+          <li><a href="/support">Support</a></li>
+        
+          <li><a href="https://github.com/exaile/exaile">Code</a></li>
+        
+          <li><a href="https://github.com/exaile/exaile/issues">Bugs</a></li>
+        
+      </ul>
+    </nav>
+
+    <div class="clear"></div>
+      <main>
+        
+  <div class="description">
+
+    <h3>
+      Exaile: Music Player for GTK+
+    </h3>
+
+    <p>
+    Simple interface. Powerful music management. Smart Playlists.
+    Advanced track tagging. Automatic album art. Lyrics.
+    Streaming Radio. Podcasts. Secondary output device support.
+    Easily extensible with 50+ plugins available.
+    </p>
+    <br/>
+    <a href="/download/">Download Exaile</a>
+
+  </div>
+
+
+<div class="posts">
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/05/18/Exaile-upgrade-gstreamer-gtk/">
+        Exaile is upgrading to GStreamer 1.x / GTK3!
+      </a>
+    </h1>
+
+    <time datetime="2015-05-18T00:00:00+00:00" class="post-date">18 May 2015</time>
+
+    <p>GStreamer 0.10 has been obsolete for a long time now, and with the <a href="https://lists.debian.org/debian-devel/2015/05/msg00335.html">impending removal of 0.10 from Debian</a> we decided that it would make sense to upgrade. PyGI for GStreamer 1.x is not compatible with GTK2, so we’re upgrading to GTK3 at the same time. We’re optimistic that the Exaile experience will be better than ever after these upgrades.</p>
+
+<p>Due to the amount of work required, we’re suspending work on non-critical bugs on the 3.4.x series until we’ve merged this into master.</p>
+
+<p>Right now, we need people interested in playing around with gtk/gstreamer to poke at Exaile interface, see what breaks, record bugs, and issue pull requests to fix bugs. A lot of the heavy lifting has been done already and it sorta works, but there’s still a lot left. Every little bit helps. If you want to mess with it, <a href="https://github.com/exaile/exaile/tree/gi">check out the ‘gi’ branch on github</a>.</p>
+
+<p>At the moment, we’re tracking things using <a href="https://github.com/exaile/exaile/wiki/PyGI-migration-tasklist-%28GTK3-GStreamer-1.x%29">this wiki page</a>. We’re also hanging out on IRC at various times.</p>
+
+<p>Once the bugs become much harder to find, we’ll make a release candidate available for users to try it out, and track bugs using the github issue tracker. With your help, optimistically we can get this done in a few weeks.</p>
+
+<p>Thanks for continuing to support Exaile!</p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/04/27/Exaile-3.4.5-released/">
+        Exaile 3.4.5 released
+      </a>
+    </h1>
+
+    <time datetime="2015-04-27T00:00:00+00:00" class="post-date">27 Apr 2015</time>
+
+    <p>The Exaile development team is happy to announce the latest release of Exaile. This release fixes the following bugs, and contains a number of translation updates as well:</p>
+
+<ul>
+  <li><a href="https://github.com/exaile/exaile/issues/64">#64</a> - Errors loading Smart Playlists that filter based on a playlist</li>
+  <li><a href="https://github.com/exaile/exaile/issues/65">#65</a> - Missing icon issue</li>
+  <li><a href="https://github.com/exaile/exaile/issues/75">#75</a> - Disable equalizer by default</li>
+</ul>
+
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2015/03/15/Exaile-3.4.4-released/">
+        Exaile 3.4.4 released
+      </a>
+    </h1>
+
+    <time datetime="2015-03-15T00:00:00+00:00" class="post-date">15 Mar 2015</time>
+
+    <p>The Exaile development team is happy to announce the latest release of Exaile. This release fixes the following bugs, and contains a number of translation updates as well:</p>
+
+<ul>
+  <li><a href="https://github.com/exaile/exaile/issues/54">#54</a> - If you installed Exaile by makefile, or in slightly nonstandard ways, translations wouldn’t actually work</li>
+  <li><a href="https://github.com/exaile/exaile/issues?q=milestone%3A%22Exaile+3.4.4%22+is%3Aclosed">Various minor bugs</a></li>
+</ul>
+
+<p>And of course, you can look at the <a href="https://github.com/exaile/exaile/compare/3.4.3...3.4.4">commit log</a> on github too.</p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2014/12/15/Exaile-3.4.3-released/">
+        Exaile 3.4.3 released (translations update)
+      </a>
+    </h1>
+
+    <time datetime="2014-12-15T00:00:00+00:00" class="post-date">15 Dec 2014</time>
+
+    <p>This is a significant translations update for Exaile, with close to 100% translations available now for several languages. If you would like to contribute to the Exaile translation effort, translation tools are now being generously hosted by <a href="https://hosted.weblate.org/projects/exaile/master/">hosted weblate</a>. </p>
+
+<p>Additionally, one minor bug was fixed:</p>
+
+<ul>
+  <li><a href="https://github.com/exaile/exaile/issues/19">#19</a> - Smart Playlists with criteria involving timestamps do not work</li>
+</ul>
+
+<p>Special thanks to @strebski for pointing out the translation problem, and providing a polish translation for Exaile. Additional thanks to the many translators who contributed to this release.</p>
+
+  </article>
+  
+  <article class="post">
+    <h1 class="post-title">
+      <a href="/2014/11/09/Exaile-3.4.2-released/">
+        Exaile 3.4.2 released (semi-critical bugfix release)
+      </a>
+    </h1>
+
+    <time datetime="2014-11-09T00:00:00+00:00" class="post-date">09 Nov 2014</time>
+
+    <p>Fixes the following bugs:</p>
+
+<ul>
+  <li><a href="https://github.com/exaile/exaile/issues/11">#11</a> - Exaile did not always update individual files when changed externally</li>
+  <li><a href="https://github.com/exaile/exaile/issues/12">#12</a> - Add an option to ‘force rescan’ of files for users with misbehaving external tagger programs</li>
+  <li><a href="https://github.com/exaile/exaile/issues/13">#13</a> - GroupTagger plugin: Potential tag loss when using externally modified files</li>
+</ul>
+
+<p>All users are strongly encouraged to upgrade to this release, particularly users of the GroupTagger plugin.</p>
+
+  </article>
+  
+</div>
+
+<div class="pagination">
+  
+    <a class="pagination-item older" href="/page2">Older</a>
+  
+  
+    <span class="pagination-item newer">Newer</span>
+  
+</div>
+
+      </main>
+
+      <footer class="footer">
+        <small>
+          &copy; <time datetime="2015-05-18T07:17:54+00:00">2015</time>. All rights reserved.
+        </small>
+      </footer>
+    </div>
+
+  </body>
+</html>
