@@ -38,7 +38,8 @@ def main():
     print bike1.printVals()
     for v in vehicles:
         if hasattr(v,'speed'):
-            print v.name
+            print (v.name)
         if hasattr(v,'taste'):
-            print v.name
+            print (v.name)
 
+a='hi'

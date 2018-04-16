@@ -1,0 +1,25 @@
+AC700	Aug 2016
+C7 Chromebook	Oct 2017
+Chromebook 11 (C720, C720P)	Jun 2019
+Chromebook 11 (C740)	Jun 2020
+Chromebook 11 (C730, C730E)	Aug 2019
+Chromebook 11 (CB3-131, C735)	Jan 2021
+Chromebook 11 N7 (C731, C731T)	Jan 2022
+Chromebook 11 (CB311-8H, CB311-8HT)	Nov 2023
+Chromebook 11 (C732, C732T, C732L, C732LT)	Nov 2023
+Chromebook 11 (C771, C771T)	Nov 2022
+Chromebook 13 (CB5-311)	Sep 2019
+Chromebook 14 (CB3-431)	Jun 2021
+Chromebook 14 for Work (CP5-471)	Nov 2022
+Chromebook 15 (CB5-571, C910)	Jun 2020
+Chromebook 15 (CB3-531)	Jun 2020
+Chromebook 15 (CB3-532)	Aug 2021
+Chromebook 15 (CB515-1H, CB515-1HT)	Nov 2023
+Chromebook R11 (CB5-132T, C738T)	Jun 2021
+Chromebook Spin 11 (R751T)	Nov 2023
+Chromebook Spin 11 (CP311-H1, CP311-1HN)	Nov 2023
+Chromebook R13 (CB5-312T)	Sep 2021
+Chromebox	Sep 2019
+Chromebox CXI2	Jun 2020
+Chromebase	Aug 2020
+Chromebase 24	Jun 2021
