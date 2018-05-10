@@ -1,3 +1,6 @@
 [submodule "mkosi/mkosi"]
 	path = mkosi/mkosi
 	url = https://github.com/systemd/mkosi.git
+[submodule "pet"]
+	path = buildah/docker-b00za-shell
+	url = git@github.com:andmalc/docker-b00za-shell.git
