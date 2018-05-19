@@ -1,3 +1,6 @@
 [submodule "mkosi/mkosi"]
 	path = mkosi/mkosi
 	url = https://github.com/systemd/mkosi.git
+[submodule "html/html5-boilerplate"]
+	path = html/html5-boilerplate
+	url = https://github.com/h5bp/html5-boilerplate
