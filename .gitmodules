@@ -1,6 +1,6 @@
 [submodule "mkosi/mkosi"]
 	path = mkosi/mkosi
 	url = https://github.com/systemd/mkosi.git
-[submodule "pet"]
-	path = buildah/docker-b00za-shell
-	url = git@github.com:andmalc/docker-b00za-shell.git
+[submodule "html/html5-boilerplate"]
+	path = html/html5-boilerplate
+	url = https://github.com/h5bp/html5-boilerplate
