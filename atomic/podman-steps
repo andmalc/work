@@ -1,0 +1,28 @@
+Podman libpod Docs
+https://github.com/containers/libpod
+
+
+Fedora Toolbox
+podman pull registry.fedoraproject.org/f29/fedora-toolbox
+podman run --name toolbox --hostname toolbox -v /home/:/home -it toolbox /bin/bash
+
+Postgresql
+
+https://github.com/sclorg/postgresql-container/tree/generated/10
+
+podman inspect registry.fedoraproject.org/f29/postgresql:testing
+podman run -d --name postgresql_database -e POSTGRESQL_USER=user -e POSTGRESQL_PASSWORD=pass -e POSTGRESQL_DATABASE=db \
+	-p 5432:5432 registry.fedoraproject.org/f29/postgresql:testing
+
+podman exec postgresql_database pg_ctl -D /var/lib/pgsql/data/userdata -l logfile start
+podman logs postgresql_database
+
+Psql
+psql -h 0.0.0.0 -p 5432 -U user -d db
+podman exec -it  postgresql_database psql -U user db
+
+Run options
+
+Mount local dir for PQ data
+-v /host/db/path:/var/lib/pgsql/data
+
