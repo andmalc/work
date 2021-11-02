@@ -1,0 +1,7 @@
+# IPython log file
+
+l=[1,3]
+get_ipython().run_line_magic('history', '')
+get_ipython().run_line_magic('logstart', '')
+get_ipython().run_line_magic('pwd', '')
+get_ipython().run_line_magic('logstop', '')

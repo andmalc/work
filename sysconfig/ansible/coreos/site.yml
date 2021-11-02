@@ -1,0 +1,12 @@
+---
+- hosts: coreos
+  gather_facts: False
+  roles:
+    - defunctzombie.coreos-bootstrap
+  user: core
+    #  sudo: yes
+  tasks:
+    - name: test connection
+      ping:
+
+

@@ -1,0 +1,17 @@
+#nested sequence
+- fruit
+- cars
+
+#  - 2.2
+#- - - 2.2.1
+#    - 2.2.2
+#    - 2.2.3
+---
+#basic nested seq
+-
+    - a
+    - b
+    - c
+-
+    - d
+    - d

@@ -1,0 +1,14 @@
+- hosts: coreos
+  name: Homedev Running 
+  remote_user: core
+  sudo: true
+  tasks:
+    - name: Verify running
+    - name: launch container
+      docker:
+        image="andmalc/jessie-devserver"
+        name="jd"
+        ports="8080:80"
+        state=running
+        -d  -p 8888:8888 -p 42222:22 -h devserver --name jdevserverv -v /home/andmalc:/home/andmalc andmalc/jessie-devserver 
+      -name mysql -e MYSQL_ROOT_PASSWORD=b -p 127.0.0.1:3306:3306 mysql

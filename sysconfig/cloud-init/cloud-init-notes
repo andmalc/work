@@ -1,0 +1,10 @@
+
+Docs
+https://www.digitalocean.com/community/tutorials/an-introduction-to-cloud-config-scripting
+https://github.com/number5/cloud-init/blob/master/doc/examples/cloud-config.txt
+
+
+Password hashing
+openssl passwd -1 -salt xyz ghandi
+
+

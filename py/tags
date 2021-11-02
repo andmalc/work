@@ -1,0 +1,751 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ADDR	tom/httpserver.py	/^ADDR = (HOST, PORT)$/;"	v
+ADDR	tom/socketclient.py	/^ADDR = (HOST, PORT)$/;"	v
+ADDR	tom/socketserver.py	/^ADDR = (HOST, PORT)$/;"	v
+ADMINS	django/bikesite/settings.py	/^ADMINS = ($/;"	v
+ADMINS	django/mysite/settings.py	/^ADMINS = ($/;"	v
+ADMIN_MEDIA_PREFIX	django/bikesite/settings.py	/^ADMIN_MEDIA_PREFIX = '\/media\/'$/;"	v
+ADMIN_MEDIA_PREFIX	django/mysite/settings.py	/^ADMIN_MEDIA_PREFIX = '\/media\/'$/;"	v
+Accept	coroutines/dl/pyos8.py	/^def Accept(sock):$/;"	f
+Address	sqlalchemy/sqltest.py	/^class Address(Base):$/;"	c
+Android	android.py	/^class Android(object):$/;"	c
+BUFSIZ	tom/httpserver.py	/^BUFSIZ = 1024$/;"	v
+BUFSIZ	tom/socketclient.py	/^BUFSIZ = 1024$/;"	v
+BUFSIZ	tom/socketserver.py	/^BUFSIZ = 1024$/;"	v
+BUFSIZE	coroutines/dl/cxml/cxmlparse.c	92;"	d	file:
+Base	sqlalchemy/sqltest.py	/^Base = declarative_base()$/;"	v
+BaseController	pylons/helloworld/helloworld/lib/base.py	/^class BaseController(WSGIController):$/;"	c
+BaseRequestHandler	tom/SocketServer-mine.py	/^class BaseRequestHandler:$/;"	c
+BaseServer	tom/SocketServer-mine.py	/^class BaseServer:$/;"	c
+Bike	django/bikesite/bikes/models.py	/^class Bike(models.Model):$/;"	c
+Bike	vehicles.py	/^class Bike:$/;"	c
+Car	vehicles.py	/^class Car:$/;"	c
+Choice	django/mysite/polls/models.py	/^class Choice(models.Model):$/;"	c
+DATABASE_ENGINE	django/bikesite/settings.py	/^DATABASE_ENGINE = 'sqlite3'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.$/;"	v
+DATABASE_ENGINE	django/mysite/settings.py	/^DATABASE_ENGINE = 'sqlite3'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.$/;"	v
+DATABASE_HOST	django/bikesite/settings.py	/^DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.$/;"	v
+DATABASE_HOST	django/mysite/settings.py	/^DATABASE_HOST = ''             # Set to empty string for localhost. Not used with sqlite3.$/;"	v
+DATABASE_NAME	django/bikesite/settings.py	/^DATABASE_NAME = '\/home\/andmalc\/work\/py\/django\/bikesite\/bikes.db'             # Or path to database file if using sqlite3.$/;"	v
+DATABASE_NAME	django/mysite/settings.py	/^DATABASE_NAME = '\/home\/andmalc\/work\/py\/django\/mysite\/mysite.db'             # Or path to database file if using sqlite3.$/;"	v
+DATABASE_PASSWORD	django/bikesite/settings.py	/^DATABASE_PASSWORD = ''         # Not used with sqlite3.$/;"	v
+DATABASE_PASSWORD	django/mysite/settings.py	/^DATABASE_PASSWORD = ''         # Not used with sqlite3.$/;"	v
+DATABASE_PORT	django/bikesite/settings.py	/^DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.$/;"	v
+DATABASE_PORT	django/mysite/settings.py	/^DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.$/;"	v
+DATABASE_USER	django/bikesite/settings.py	/^DATABASE_USER = ''             # Not used with sqlite3.$/;"	v
+DATABASE_USER	django/mysite/settings.py	/^DATABASE_USER = ''             # Not used with sqlite3.$/;"	v
+DEBUG	django/bikesite/settings.py	/^DEBUG = True$/;"	v
+DEBUG	django/mysite/settings.py	/^DEBUG = True$/;"	v
+DEFAULT_URL	pylons/helloworld/ez_setup.py	/^DEFAULT_URL     = "http:\/\/pypi.python.org\/packages\/%s\/s\/setuptools\/" % sys.version[:3]$/;"	v
+DEFAULT_VERSION	pylons/helloworld/ez_setup.py	/^DEFAULT_VERSION = "0.6c9"$/;"	v
+DatagramRequestHandler	tom/SocketServer-mine.py	/^class DatagramRequestHandler(BaseRequestHandler):$/;"	c
+ENABLE_USER_SITE	requests/lib/python2.7/site.py	/^ENABLE_USER_SITE = None$/;"	v
+END_EVENT	coroutines/dl/cxml/cxmlparse.c	/^static PyObject *END_EVENT;$/;"	v	file:
+EPOCH	ntpscript.py	/^EPOCH = 2208988800L$/;"	v
+Echo	coroutines/dl/twistedecho.py	/^class Echo(Protocol):$/;"	c
+EchoHandler	coroutines/dl/echothread.py	/^class EchoHandler(SocketServer.BaseRequestHandler):$/;"	c
+ErrorController	pylons/helloworld/helloworld/controllers/error.py	/^class ErrorController(BaseController):$/;"	c
+EventHandler	coroutines/dl/cosax.py	/^class EventHandler(xml.sax.ContentHandler):$/;"	c
+ForkingMixIn	tom/SocketServer-mine.py	/^class ForkingMixIn:$/;"	c
+ForkingTCPServer	tom/SocketServer-mine.py	/^class ForkingTCPServer(ForkingMixIn, TCPServer): pass$/;"	c
+ForkingUDPServer	tom/SocketServer-mine.py	/^class ForkingUDPServer(ForkingMixIn, UDPServer): pass$/;"	c
+Fruit	vehicles.py	/^class Fruit:$/;"	c
+GetTid	coroutines/dl/pyos4.py	/^class GetTid(SystemCall):$/;"	c
+GetTid	coroutines/dl/pyos5.py	/^class GetTid(SystemCall):$/;"	c
+GetTid	coroutines/dl/pyos6.py	/^class GetTid(SystemCall):$/;"	c
+GetTid	coroutines/dl/pyos7.py	/^class GetTid(SystemCall):$/;"	c
+GetTid	coroutines/dl/pyos8.py	/^class GetTid(SystemCall):$/;"	c
+Globals	pylons/helloworld/helloworld/lib/app_globals.py	/^class Globals(object):$/;"	c
+GrepHandler	coroutines/dl/benchmark.py	/^class GrepHandler(object):$/;"	c
+HANDSHAKE	android.py	/^HANDSHAKE = os.environ.get('AP_HANDSHAKE')$/;"	v
+HOST	android.py	/^HOST = os.environ.get('AP_HOST')$/;"	v
+HOST	tom/httpclient.py	/^HOST = ''$/;"	v
+HOST	tom/httpserver.py	/^HOST = ''$/;"	v
+HOST	tom/socketclient.py	/^HOST = 'localhost'$/;"	v
+HOST	tom/socketserver.py	/^HOST = ''$/;"	v
+HelloController	pylons/helloworld/helloworld/controllers/hello.py	/^class HelloController(BaseController):$/;"	c
+INSTALLED_APPS	django/bikesite/settings.py	/^INSTALLED_APPS = ($/;"	v
+INSTALLED_APPS	django/mysite/settings.py	/^INSTALLED_APPS = ($/;"	v
+KillTask	coroutines/dl/pyos5.py	/^class KillTask(SystemCall):$/;"	c
+KillTask	coroutines/dl/pyos6.py	/^class KillTask(SystemCall):$/;"	c
+KillTask	coroutines/dl/pyos7.py	/^class KillTask(SystemCall):$/;"	c
+KillTask	coroutines/dl/pyos8.py	/^class KillTask(SystemCall):$/;"	c
+L	sortingtest.py	/^L = [('c', 2), ('d', 1), ('a', 4), ('b', 3)]$/;"	v
+LANGUAGE_CODE	django/bikesite/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+LANGUAGE_CODE	django/mysite/settings.py	/^LANGUAGE_CODE = 'en-us'$/;"	v
+MANAGERS	django/bikesite/settings.py	/^MANAGERS = ADMINS$/;"	v
+MANAGERS	django/mysite/settings.py	/^MANAGERS = ADMINS$/;"	v
+MAXLINES	requests/lib/python2.7/site.py	/^    MAXLINES = 23$/;"	v	class:_Printer
+MEDIA_ROOT	django/bikesite/settings.py	/^MEDIA_ROOT = ''$/;"	v
+MEDIA_ROOT	django/mysite/settings.py	/^MEDIA_ROOT = ''$/;"	v
+MEDIA_URL	django/bikesite/settings.py	/^MEDIA_URL = ''$/;"	v
+MEDIA_URL	django/mysite/settings.py	/^MEDIA_URL = ''$/;"	v
+MIDDLEWARE_CLASSES	django/bikesite/settings.py	/^MIDDLEWARE_CLASSES = ($/;"	v
+MIDDLEWARE_CLASSES	django/mysite/settings.py	/^MIDDLEWARE_CLASSES = ($/;"	v
+MSG	coroutines/dl/blaster.py	/^MSG          = "x"*MSGSIZE          # The message$/;"	v
+MSGSIZE	coroutines/dl/blaster.py	/^MSGSIZE      = 1024                 # Message size$/;"	v
+ModuleType	requests/lib/python2.7/site.py	/^    ModuleType = type(os)$/;"	v
+MyHandler	coroutines/dl/basicsax.py	/^class MyHandler(xml.sax.ContentHandler):$/;"	c
+MyRequestHandler	tom/socketserver.py	/^class MyRequestHandler(SRH):$/;"	c
+MyServer	coroutines/dl/echothread.py	/^class MyServer(SocketServer.ThreadingTCPServer):$/;"	c
+NCONNECTIONS	coroutines/dl/blaster.py	/^NCONNECTIONS = 300                  # Number of connections to make$/;"	v
+NPROCS	coroutines/dl/runblaster.py	/^NPROCS = 3$/;"	v
+NewTask	coroutines/dl/pyos5.py	/^class NewTask(SystemCall):$/;"	c
+NewTask	coroutines/dl/pyos6.py	/^class NewTask(SystemCall):$/;"	c
+NewTask	coroutines/dl/pyos7.py	/^class NewTask(SystemCall):$/;"	c
+NewTask	coroutines/dl/pyos8.py	/^class NewTask(SystemCall):$/;"	c
+PORT	android.py	/^PORT = os.environ.get('AP_PORT')$/;"	v
+PORT	tom/httpclient.py	/^PORT = 21580$/;"	v
+PORT	tom/httpserver.py	/^PORT = 21581$/;"	v
+PORT	tom/socketclient.py	/^PORT = 21566$/;"	v
+PORT	tom/socketserver.py	/^PORT = 21566$/;"	v
+PREFIXES	requests/lib/python2.7/site.py	/^PREFIXES = [sys.prefix, sys.exec_prefix]$/;"	v
+Part	django/bikesite/bikes/models.py	/^class Part(models.Model):$/;"	c
+Poll	django/mysite/polls/models.py	/^class Poll(models.Model):$/;"	c
+Printer	yaml/loadyaml.py	/^class Printer(object):$/;"	c
+Quitter	requests/lib/python2.7/site.py	/^    class Quitter(object):$/;"	c	function:setquit
+ROOT_URLCONF	django/bikesite/settings.py	/^ROOT_URLCONF = 'bikesite.urls'$/;"	v
+ROOT_URLCONF	django/mysite/settings.py	/^ROOT_URLCONF = 'mysite.urls'$/;"	v
+ReadWait	coroutines/dl/pyos7.py	/^class ReadWait(SystemCall):$/;"	c
+ReadWait	coroutines/dl/pyos8.py	/^class ReadWait(SystemCall):$/;"	c
+Recv	coroutines/dl/pyos8.py	/^def Recv(sock,maxbytes):$/;"	f
+Result	android.py	/^Result = collections.namedtuple('Result', 'id,result,error')$/;"	v
+SECRET_KEY	django/bikesite/settings.py	/^SECRET_KEY = '%*wm05$nf%5-uv$7d^+9aq#juk($6!q^2lwgg9+1!buoni7zco'$/;"	v
+SERVER	coroutines/dl/blaster.py	/^SERVER       = ('localhost',45000)  # Server address$/;"	v
+SITE_ID	django/bikesite/settings.py	/^SITE_ID = 1$/;"	v
+SITE_ID	django/mysite/settings.py	/^SITE_ID = 1$/;"	v
+START_EVENT	coroutines/dl/cxml/cxmlparse.c	/^static PyObject *START_EVENT;$/;"	v	file:
+Scheduler	coroutines/dl/pyos2.py	/^class Scheduler(object):$/;"	c
+Scheduler	coroutines/dl/pyos3.py	/^class Scheduler(object):$/;"	c
+Scheduler	coroutines/dl/pyos4.py	/^class Scheduler(object):$/;"	c
+Scheduler	coroutines/dl/pyos5.py	/^class Scheduler(object):$/;"	c
+Scheduler	coroutines/dl/pyos6.py	/^class Scheduler(object):$/;"	c
+Scheduler	coroutines/dl/pyos7.py	/^class Scheduler(object):$/;"	c
+Scheduler	coroutines/dl/pyos8.py	/^class Scheduler(object):$/;"	c
+Send	coroutines/dl/pyos8.py	/^def Send(sock,buffer):$/;"	f
+Server	ntpscript.py	/^            Server = 'clock.isc.org'$/;"	v
+Server	ntpscript.py	/^            Server= options.server$/;"	v
+Server	ntpscript.py	/^Server = ''$/;"	v
+Session	sqlalchemy/sqltest.py	/^Session = sessionmaker(bind=engine)$/;"	v
+SimpleHTTPRequestHandler	tom/SimpleHTTPServer-mine.py	/^class SimpleHTTPRequestHandler(BaseHTTPServer.BaseHTTPRequestHandler):$/;"	c
+Socket	coroutines/dl/sockwrap.py	/^class Socket(object):$/;"	c
+StreamRequestHandler	tom/SocketServer-mine.py	/^class StreamRequestHandler(BaseRequestHandler):$/;"	c
+SystemCall	coroutines/dl/pyos4.py	/^class SystemCall(object):$/;"	c
+SystemCall	coroutines/dl/pyos5.py	/^class SystemCall(object):$/;"	c
+SystemCall	coroutines/dl/pyos6.py	/^class SystemCall(object):$/;"	c
+SystemCall	coroutines/dl/pyos7.py	/^class SystemCall(object):$/;"	c
+SystemCall	coroutines/dl/pyos8.py	/^class SystemCall(object):$/;"	c
+TCPServer	tom/SocketServer-mine.py	/^class TCPServer(BaseServer):$/;"	c
+TEMPLATE_DEBUG	django/bikesite/settings.py	/^TEMPLATE_DEBUG = DEBUG$/;"	v
+TEMPLATE_DEBUG	django/mysite/settings.py	/^TEMPLATE_DEBUG = DEBUG$/;"	v
+TEMPLATE_DIRS	django/bikesite/settings.py	/^TEMPLATE_DIRS = ($/;"	v
+TEMPLATE_DIRS	django/mysite/settings.py	/^TEMPLATE_DIRS = ($/;"	v
+TEMPLATE_LOADERS	django/bikesite/settings.py	/^TEMPLATE_LOADERS = ($/;"	v
+TEMPLATE_LOADERS	django/mysite/settings.py	/^TEMPLATE_LOADERS = ($/;"	v
+TEXT_BUF_SIZE	coroutines/dl/cxml/cxmlparse.c	4;"	d	file:
+TEXT_EVENT	coroutines/dl/cxml/cxmlparse.c	/^static PyObject *TEXT_EVENT;$/;"	v	file:
+TIME_ZONE	django/bikesite/settings.py	/^TIME_ZONE = 'America\/Chicago'$/;"	v
+TIME_ZONE	django/mysite/settings.py	/^TIME_ZONE = 'America\/Chicago'$/;"	v
+Task	coroutines/dl/pyos1.py	/^class Task(object):$/;"	c
+Task	coroutines/dl/pyos2.py	/^class Task(object):$/;"	c
+Task	coroutines/dl/pyos3.py	/^class Task(object):$/;"	c
+Task	coroutines/dl/pyos4.py	/^class Task(object):$/;"	c
+Task	coroutines/dl/pyos5.py	/^class Task(object):$/;"	c
+Task	coroutines/dl/pyos6.py	/^class Task(object):$/;"	c
+Task	coroutines/dl/pyos7.py	/^class Task(object):$/;"	c
+Task	coroutines/dl/pyos8.py	/^class Task(object):$/;"	c
+Task	coroutines/dl/task.py	/^class Task(object):$/;"	c
+TestController	pylons/helloworld/helloworld/tests/__init__.py	/^class TestController(TestCase):$/;"	c
+TestHelloController	pylons/helloworld/helloworld/tests/functional/test_hello.py	/^class TestHelloController(TestController):$/;"	c
+TestOptparse	optparsetest-test.py	/^class TestOptparse(unittest.TestCase):$/;"	c
+TestUM	dividing.py	/^class TestUM(unittest.TestCase):$/;"	c
+ThreadingMixIn	tom/SocketServer-mine.py	/^class ThreadingMixIn:$/;"	c
+ThreadingTCPServer	tom/SocketServer-mine.py	/^class ThreadingTCPServer(ThreadingMixIn, TCPServer): pass$/;"	c
+ThreadingUDPServer	tom/SocketServer-mine.py	/^class ThreadingUDPServer(ThreadingMixIn, UDPServer): pass$/;"	c
+ThreadingUnixDatagramServer	tom/SocketServer-mine.py	/^    class ThreadingUnixDatagramServer(ThreadingMixIn, UnixDatagramServer): pass$/;"	c	class:ThreadingTCPServer
+ThreadingUnixStreamServer	tom/SocketServer-mine.py	/^    class ThreadingUnixStreamServer(ThreadingMixIn, UnixStreamServer): pass$/;"	c	class:ThreadingTCPServer
+UDPServer	tom/SocketServer-mine.py	/^class UDPServer(TCPServer):$/;"	c
+USER_BASE	requests/lib/python2.7/site.py	/^USER_BASE = None$/;"	v
+USER_SITE	requests/lib/python2.7/site.py	/^USER_SITE = None$/;"	v
+USE_I18N	django/bikesite/settings.py	/^USE_I18N = True$/;"	v
+USE_I18N	django/mysite/settings.py	/^USE_I18N = True$/;"	v
+UnixDatagramServer	tom/SocketServer-mine.py	/^    class UnixDatagramServer(UDPServer):$/;"	c	class:ThreadingTCPServer
+UnixStreamServer	tom/SocketServer-mine.py	/^    class UnixStreamServer(TCPServer):$/;"	c	class:ThreadingTCPServer
+User	sqlalchemy/sqltest.py	/^class User(Base):$/;"	c
+WaitTask	coroutines/dl/pyos6.py	/^class WaitTask(SystemCall):$/;"	c
+WaitTask	coroutines/dl/pyos7.py	/^class WaitTask(SystemCall):$/;"	c
+WaitTask	coroutines/dl/pyos8.py	/^class WaitTask(SystemCall):$/;"	c
+WebServer	tom/socketserver.py	/^def WebServer():$/;"	f
+WriteWait	coroutines/dl/pyos7.py	/^class WriteWait(SystemCall):$/;"	c
+WriteWait	coroutines/dl/pyos8.py	/^class WriteWait(SystemCall):$/;"	c
+_Helper	requests/lib/python2.7/site.py	/^class _Helper(object):$/;"	c
+_Printer	requests/lib/python2.7/site.py	/^class _Printer(object):$/;"	c
+__all__	pylons/helloworld/helloworld/tests/__init__.py	/^__all__ = ['environ', 'url', 'TestController']$/;"	v
+__all__	tom/SimpleHTTPServer-mine.py	/^__all__ = ["SimpleHTTPRequestHandler"]$/;"	v
+__all__	tom/SocketServer-mine.py	/^__all__ = ["TCPServer","UDPServer","ForkingUDPServer","ForkingTCPServer",$/;"	v
+__author__	android.py	/^__author__ = 'Damon Kohler <damonkohler@gmail.com>'$/;"	v
+__call__	decorator.py	/^    def __call__(self):$/;"	m	class:myDecorator	file:
+__call__	pylons/helloworld/helloworld/lib/base.py	/^    def __call__(self, environ, start_response):$/;"	m	class:BaseController	file:
+__call__	requests/lib/python2.7/site.py	/^        def __call__(self, code=None):$/;"	m	class:setquit.Quitter	file:
+__call__	requests/lib/python2.7/site.py	/^    def __call__(self):$/;"	m	class:_Printer	file:
+__call__	requests/lib/python2.7/site.py	/^    def __call__(self, *args, **kwds):$/;"	m	class:_Helper	file:
+__getattr__	android.py	/^  def __getattr__(self, name):$/;"	m	class:Android	file:
+__init__	android.py	/^  def __init__(self, addr=None):$/;"	m	class:Android
+__init__	coroutines/dl/benchmark.py	/^    def __init__(self,pattern, target):$/;"	m	class:GrepHandler
+__init__	coroutines/dl/cosax.py	/^    def __init__(self,target):$/;"	m	class:EventHandler
+__init__	coroutines/dl/pyos1.py	/^    def __init__(self,target):$/;"	m	class:Task
+__init__	coroutines/dl/pyos2.py	/^    def __init__(self):$/;"	m	class:Scheduler
+__init__	coroutines/dl/pyos2.py	/^    def __init__(self,target):$/;"	m	class:Task
+__init__	coroutines/dl/pyos3.py	/^    def __init__(self):$/;"	m	class:Scheduler
+__init__	coroutines/dl/pyos3.py	/^    def __init__(self,target):$/;"	m	class:Task
+__init__	coroutines/dl/pyos4.py	/^    def __init__(self):$/;"	m	class:Scheduler
+__init__	coroutines/dl/pyos4.py	/^    def __init__(self,target):$/;"	m	class:Task
+__init__	coroutines/dl/pyos5.py	/^    def __init__(self):$/;"	m	class:Scheduler
+__init__	coroutines/dl/pyos5.py	/^    def __init__(self,target):$/;"	m	class:NewTask
+__init__	coroutines/dl/pyos5.py	/^    def __init__(self,target):$/;"	m	class:Task
+__init__	coroutines/dl/pyos5.py	/^    def __init__(self,tid):$/;"	m	class:KillTask
+__init__	coroutines/dl/pyos6.py	/^    def __init__(self):$/;"	m	class:Scheduler
+__init__	coroutines/dl/pyos6.py	/^    def __init__(self,target):$/;"	m	class:NewTask
+__init__	coroutines/dl/pyos6.py	/^    def __init__(self,target):$/;"	m	class:Task
+__init__	coroutines/dl/pyos6.py	/^    def __init__(self,tid):$/;"	m	class:KillTask
+__init__	coroutines/dl/pyos6.py	/^    def __init__(self,tid):$/;"	m	class:WaitTask
+__init__	coroutines/dl/pyos7.py	/^    def __init__(self):$/;"	m	class:Scheduler
+__init__	coroutines/dl/pyos7.py	/^    def __init__(self,f):$/;"	m	class:ReadWait
+__init__	coroutines/dl/pyos7.py	/^    def __init__(self,f):$/;"	m	class:WriteWait
+__init__	coroutines/dl/pyos7.py	/^    def __init__(self,target):$/;"	m	class:NewTask
+__init__	coroutines/dl/pyos7.py	/^    def __init__(self,target):$/;"	m	class:Task
+__init__	coroutines/dl/pyos7.py	/^    def __init__(self,tid):$/;"	m	class:KillTask
+__init__	coroutines/dl/pyos7.py	/^    def __init__(self,tid):$/;"	m	class:WaitTask
+__init__	coroutines/dl/pyos8.py	/^    def __init__(self):$/;"	m	class:Scheduler
+__init__	coroutines/dl/pyos8.py	/^    def __init__(self,f):$/;"	m	class:ReadWait
+__init__	coroutines/dl/pyos8.py	/^    def __init__(self,f):$/;"	m	class:WriteWait
+__init__	coroutines/dl/pyos8.py	/^    def __init__(self,target):$/;"	m	class:NewTask
+__init__	coroutines/dl/pyos8.py	/^    def __init__(self,target):$/;"	m	class:Task
+__init__	coroutines/dl/pyos8.py	/^    def __init__(self,tid):$/;"	m	class:KillTask
+__init__	coroutines/dl/pyos8.py	/^    def __init__(self,tid):$/;"	m	class:WaitTask
+__init__	coroutines/dl/sockwrap.py	/^    def __init__(self,sock):$/;"	m	class:Socket
+__init__	coroutines/dl/task.py	/^    def __init__(self,target):$/;"	m	class:Task
+__init__	decorator.py	/^    def __init__(self, f):$/;"	m	class:myDecorator
+__init__	iterators.py	/^	def __init__(self):$/;"	m	class:myiter
+__init__	pylons/helloworld/helloworld/lib/app_globals.py	/^    def __init__(self):$/;"	m	class:Globals
+__init__	pylons/helloworld/helloworld/tests/__init__.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:TestController
+__init__	requests/lib/python2.7/site.py	/^        def __init__(self, name):$/;"	m	class:setquit.Quitter
+__init__	requests/lib/python2.7/site.py	/^    def __init__(self, name, data, files=(), dirs=()):$/;"	m	class:_Printer
+__init__	sqlalchemy/sqltest.py	/^	def __init__(self, email_address):$/;"	m	class:Address
+__init__	sqlalchemy/sqltest.py	/^	def __init__(self,name,fullname,password):$/;"	m	class:User
+__init__	tom/SocketServer-mine.py	/^    def __init__(self, request, client_address, server):$/;"	m	class:BaseRequestHandler
+__init__	tom/SocketServer-mine.py	/^    def __init__(self, server_address, RequestHandlerClass):$/;"	m	class:BaseServer
+__init__	tom/SocketServer-mine.py	/^    def __init__(self, server_address, RequestHandlerClass):$/;"	m	class:TCPServer
+__init__	vehicles.py	/^    def __init__(self,name,vtype):$/;"	m	class:Bike
+__init__	vehicles.py	/^    def __init__(self,name,vtype):$/;"	m	class:Car
+__init__	vehicles.py	/^    def __init__(self,name,vtype):$/;"	m	class:Fruit
+__init__	yaml/loadyaml.py	/^	def __init__(self):$/;"	m	class:Printer
+__iter__	iterators.py	/^	def __iter__(self):$/;"	m	class:myiter	file:
+__repr__	requests/lib/python2.7/site.py	/^        def __repr__(self):$/;"	m	class:setquit.Quitter	file:
+__repr__	requests/lib/python2.7/site.py	/^    def __repr__(self):$/;"	m	class:_Helper	file:
+__repr__	requests/lib/python2.7/site.py	/^    def __repr__(self):$/;"	m	class:_Printer	file:
+__repr__	sqlalchemy/sqltest.py	/^	def __repr__(self):$/;"	m	class:Address	file:
+__repr__	sqlalchemy/sqltest.py	/^	def __repr__(self):$/;"	m	class:User	file:
+__setup	requests/lib/python2.7/site.py	/^    def __setup(self):$/;"	m	class:_Printer	file:
+__tablename__	sqlalchemy/sqltest.py	/^	__tablename__ = 'addresses'$/;"	v	class:Address
+__tablename__	sqlalchemy/sqltest.py	/^	__tablename__ = 'users'$/;"	v	class:User
+__unicode__	django/bikesite/bikes/models.py	/^    def __unicode__(self):$/;"	m	class:Bike	file:
+__unicode__	django/bikesite/bikes/models.py	/^    def __unicode__(self):$/;"	m	class:Part	file:
+__unicode__	django/mysite/polls/models.py	/^    def __unicode__(self):$/;"	m	class:Choice	file:
+__unicode__	django/mysite/polls/models.py	/^    def __unicode__(self):$/;"	m	class:Poll	file:
+__version__	tom/SimpleHTTPServer-mine.py	/^__version__ = "0.6"$/;"	v
+__version__	tom/SocketServer-mine.py	/^__version__ = "0.4"$/;"	v
+_init_pathinfo	requests/lib/python2.7/site.py	/^def _init_pathinfo():$/;"	f
+_is_pypy	requests/lib/python2.7/site.py	/^_is_pypy = hasattr(sys, 'pypy_version_info')$/;"	v
+_rpc	android.py	/^  def _rpc(self, method, *args):$/;"	m	class:Android
+_script	requests/lib/python2.7/site.py	/^def _script():$/;"	f
+_serve_file	pylons/helloworld/helloworld/controllers/error.py	/^    def _serve_file(self, path):$/;"	m	class:ErrorController
+_validate_md5	pylons/helloworld/ez_setup.py	/^def _validate_md5(egg_name, data):$/;"	f
+aFunction	decorator.py	/^def aFunction():$/;"	f
+abs__file__	requests/lib/python2.7/site.py	/^def abs__file__():$/;"	f
+accept	coroutines/dl/sockwrap.py	/^    def accept(self):$/;"	m	class:Socket
+active_children	tom/SocketServer-mine.py	/^    active_children = None$/;"	v	class:ForkingMixIn
+add	coroutines/dl/trampoline.py	/^def add(x,y):$/;"	f
+addbuilddir	requests/lib/python2.7/site.py	/^def addbuilddir():$/;"	f
+addpackage	requests/lib/python2.7/site.py	/^def addpackage(sitedir, name, known_paths):$/;"	f
+address_family	tom/SocketServer-mine.py	/^        address_family = socket.AF_UNIX$/;"	v	class:ThreadingTCPServer.UnixDatagramServer
+address_family	tom/SocketServer-mine.py	/^        address_family = socket.AF_UNIX$/;"	v	class:ThreadingTCPServer.UnixStreamServer
+address_family	tom/SocketServer-mine.py	/^    address_family = socket.AF_INET$/;"	v	class:TCPServer
+addsitedir	requests/lib/python2.7/site.py	/^def addsitedir(sitedir, known_paths=None):$/;"	f
+addsitepackages	requests/lib/python2.7/site.py	/^def addsitepackages(known_paths, sys_prefix=sys.prefix, exec_prefix=sys.exec_prefix):$/;"	f
+addusersitepackages	requests/lib/python2.7/site.py	/^def addusersitepackages(known_paths):$/;"	f
+aliasmbcs	requests/lib/python2.7/site.py	/^def aliasmbcs():$/;"	f
+alive	coroutines/dl/echo1.py	/^def alive():$/;"	f
+alive	coroutines/dl/echobad.py	/^def alive():$/;"	f
+alive	coroutines/dl/echogood.py	/^def alive():$/;"	f
+allow_reuse_address	tom/SocketServer-mine.py	/^    allow_reuse_address = False$/;"	v	class:TCPServer
+allow_reuse_address	tom/SocketServer-mine.py	/^    allow_reuse_address = False$/;"	v	class:UDPServer
+author	pylons/helloworld/setup.py	/^    author='',$/;"	v
+author_email	pylons/helloworld/setup.py	/^    author_email='',$/;"	v
+bar	coroutines/dl/pyos2.py	/^    def bar():$/;"	m	class:Scheduler
+bar	coroutines/dl/pyos3.py	/^    def bar():$/;"	m	class:Scheduler
+bar	coroutines/dl/pyos4.py	/^    def bar():$/;"	f
+bar	coroutines/dl/taskcrash.py	/^def bar():$/;"	f
+bike	django/bikesite/bikes/models.py	/^    bike = models.ForeignKey(Bike)$/;"	v	class:Part
+broadcast	coroutines/dl/cobroadcast.py	/^def broadcast(targets):$/;"	f
+broadcast	coroutines/dl/cobroadcast2.py	/^def broadcast(targets):$/;"	f
+bus_locations	coroutines/dl/buses.py	/^def bus_locations():$/;"	f
+bus_locations	coroutines/dl/buses2.py	/^def bus_locations():$/;"	f
+bus_locations	coroutines/dl/cxml/test.py	/^def bus_locations():$/;"	f
+busdict	coroutines/dl/iterbus.py	/^        busdict = dict((child.tag,child.text) $/;"	v
+buses	coroutines/dl/iterbus.py	/^        buses = elem$/;"	v
+buses_to_dicts	coroutines/dl/buses.py	/^def buses_to_dicts(target):$/;"	f
+buses_to_dicts	coroutines/dl/buses2.py	/^def buses_to_dicts(target):$/;"	f
+buses_to_dicts	coroutines/dl/cxml/test.py	/^def buses_to_dicts(target):$/;"	f
+button	gtktest.py	/^button = gtk.Button("Push me!")$/;"	v
+c	coroutines/dl/bogus.py	/^c = countdown(5)$/;"	v
+call_command	optparsetest.py	/^def call_command(command):$/;"	f
+call_command	template-script-orig.py	/^def call_command(command):$/;"	f
+call_command	template-script.py	/^def call_command(command):$/;"	f
+char_hndl	coroutines/dl/cxml/cxmlparse.c	/^void char_hndl(void *data, const char *text, int txtlen) {$/;"	f
+characters	coroutines/dl/basicsax.py	/^    def characters(self,text):$/;"	m	class:MyHandler
+characters	coroutines/dl/cosax.py	/^    def characters(self,text):$/;"	m	class:EventHandler
+check_enableusersite	requests/lib/python2.7/site.py	/^def check_enableusersite():$/;"	f
+child	lxml/lxmltest.py	/^child = root[0]$/;"	v
+child2	lxml/lxmltest.py	/^child2 = etree.SubElement(root, "child2")$/;"	v
+choice	django/mysite/polls/models.py	/^    choice = models.CharField(max_length=200)$/;"	v	class:Choice
+choice	services-test.py	/^  choice = sum([service[1] for service in services]) * random.random()$/;"	v
+click_handler	gtktest.py	/^def click_handler(widget) :$/;"	f
+client	ntpscript.py	/^client = socket( AF_INET, SOCK_DGRAM )$/;"	v
+close	coroutines/dl/sockwrap.py	/^    def close(self):$/;"	m	class:Socket
+close_request	tom/SocketServer-mine.py	/^    def close_request(self, request):$/;"	m	class:BaseServer
+close_request	tom/SocketServer-mine.py	/^    def close_request(self, request):$/;"	m	class:TCPServer
+close_request	tom/SocketServer-mine.py	/^    def close_request(self, request):$/;"	m	class:UDPServer
+collect_children	tom/SocketServer-mine.py	/^    def collect_children(self):$/;"	m	class:ForkingMixIn
+connectionMade	coroutines/dl/twistedecho.py	/^    def connectionMade(self):$/;"	m	class:Echo
+connections	coroutines/dl/blaster.py	/^connections = []$/;"	v
+copyfile	tom/SimpleHTTPServer-mine.py	/^    def copyfile(self, source, outputfile):$/;"	m	class:SimpleHTTPRequestHandler
+coroutine	coroutines/dl/coroutine.py	/^def coroutine(func):$/;"	f
+coroutine	coroutines/dl/cxml/test.py	/^def coroutine(func):$/;"	f
+countdown	coroutines/countdown.py	/^def countdown(n):$/;"	f
+countdown	coroutines/dl/bogus.py	/^def countdown(n):$/;"	f
+countdown	coroutines/dl/countdown.py	/^def countdown(n):$/;"	f
+cxmlparsemethods	coroutines/dl/cxml/cxmlparse.c	/^static PyMethodDef cxmlparsemethods[] = {$/;"	v	file:
+daemon_threads	tom/SocketServer-mine.py	/^    daemon_threads = False$/;"	v	class:ThreadingMixIn
+data	ntpscript.py	/^data = '\\x1b' + 47 * '\\0'$/;"	v
+data	py25test.py	/^data=($/;"	v
+data	pylons/helloworld/ez_setup.py	/^            data = _validate_md5(egg_name, src.read())$/;"	v
+data	tom/bsp.py	/^    data = clientSock.recv(1024)$/;"	v
+data	tom/bsp.py	/^data = "something";$/;"	v
+data	tom/socketclient.py	/^	data = tcpCliSock.recv(BUFSIZ)$/;"	v
+dataReceived	coroutines/dl/twistedecho.py	/^    def dataReceived(self, data):$/;"	m	class:Echo
+date	coroutines/dl/logsim.py	/^    date = time.strftime("[%d\/%b\/%Y:%H:%M:%S -0600]",time.localtime(t))$/;"	v
+date	pyparsing/ipython_log.py	/^Word(alphas,exact=3)("month") + '-08'$/;"	v
+db	bike.py	/^db=($/;"	v
+debug	py25test.py	/^def debug():$/;"	f
+description	pylons/helloworld/setup.py	/^    description='',$/;"	v
+do_GET	tom/SimpleHTTPServer-mine.py	/^    def do_GET(self):$/;"	m	class:SimpleHTTPRequestHandler
+do_GET	tom/httpserver.py	/^    def do_GET(self):$/;"	m	class:httpHandler
+do_GET	tom/socketserver.py	/^    def do_GET(self):$/;"	m	class:httpHandler
+do_HEAD	tom/SimpleHTTPServer-mine.py	/^    def do_HEAD(self):$/;"	m	class:SimpleHTTPRequestHandler
+do_download	pylons/helloworld/ez_setup.py	/^    def do_download():$/;"	f
+document	pylons/helloworld/helloworld/controllers/error.py	/^    def document(self):$/;"	m	class:ErrorController
+download_setuptools	pylons/helloworld/ez_setup.py	/^def download_setuptools($/;"	f
+dst	pylons/helloworld/ez_setup.py	/^            dst = open(saveto,"wb"); dst.write(data)$/;"	v
+egg_name	pylons/helloworld/ez_setup.py	/^    egg_name = "setuptools-%s-py%s.egg" % (version,sys.version[:3])$/;"	v
+email_address	sqlalchemy/sqltest.py	/^	email_address = Column(String, nullable=False)$/;"	v	class:Address
+end	coroutines/dl/runblaster.py	/^end = time.time()$/;"	v
+endElement	coroutines/dl/basicsax.py	/^    def endElement(self,name):$/;"	m	class:MyHandler
+endElement	coroutines/dl/cosax.py	/^    def endElement(self,name):$/;"	m	class:EventHandler
+end_hndl	coroutines/dl/cxml/cxmlparse.c	/^void end_hndl(void *data, const char *el) {$/;"	f
+engine	sqlalchemy/sqltest.py	/^engine = create_engine('sqlite:\/\/\/:memory:', echo=False)$/;"	v
+environ	pylons/helloworld/helloworld/controllers/hello.py	/^    def environ(self):$/;"	m	class:HelloController
+environ	pylons/helloworld/helloworld/tests/__init__.py	/^environ = {}$/;"	v
+execsitecustomize	requests/lib/python2.7/site.py	/^def execsitecustomize():$/;"	f
+execusercustomize	requests/lib/python2.7/site.py	/^def execusercustomize():$/;"	f
+exists	requests/lib/python2.7/site.py	/^        def exists(path):$/;"	f	function:_script
+exit	coroutines/dl/pyos3.py	/^    def exit(self,task):$/;"	m	class:Scheduler
+exit	coroutines/dl/pyos4.py	/^    def exit(self,task):$/;"	m	class:Scheduler
+exit	coroutines/dl/pyos5.py	/^    def exit(self,task):$/;"	m	class:Scheduler
+exit	coroutines/dl/pyos6.py	/^    def exit(self,task):$/;"	m	class:Scheduler
+exit	coroutines/dl/pyos7.py	/^    def exit(self,task):$/;"	m	class:Scheduler
+exit	coroutines/dl/pyos8.py	/^    def exit(self,task):$/;"	m	class:Scheduler
+expat_parse	coroutines/dl/coexpat.py	/^def expat_parse(f,target):$/;"	f
+expat_parse	coroutines/dl/expatbuses.py	/^def expat_parse(f,target):$/;"	f
+ext	imageresize.py	/^ext = ".jpg"$/;"	v
+ext_modules	coroutines/dl/cxml/setup.py	/^      ext_modules=[Extension("cxmlparse",[$/;"	v
+extensions_map	tom/SimpleHTTPServer-mine.py	/^    extensions_map = mimetypes.types_map.copy()$/;"	v	class:SimpleHTTPRequestHandler
+f	coroutines/dl/cobroadcast.py	/^    f = open("access-log")$/;"	v
+f	coroutines/dl/cobroadcast2.py	/^    f = open("access-log")$/;"	v
+f	coroutines/dl/cofollow.py	/^    f = open("access-log")$/;"	v
+f	coroutines/dl/copipe.py	/^    f = open("access-log")$/;"	v
+f	coroutines/dl/logsim.py	/^f = open("access-log","w")$/;"	v
+f	coroutines/generatortest.py	/^def f():$/;"	f
+fileno	tom/SocketServer-mine.py	/^    def fileno(self):$/;"	m	class:TCPServer
+filter_on_field	coroutines/dl/buses.py	/^def filter_on_field(fieldname,value,target):$/;"	f
+filter_on_field	coroutines/dl/buses2.py	/^def filter_on_field(fieldname,value,target):$/;"	f
+filter_on_field	coroutines/dl/cxml/test.py	/^def filter_on_field(fieldname,value,target):$/;"	f
+finish	tom/SocketServer-mine.py	/^    def finish(self):$/;"	m	class:BaseRequestHandler
+finish	tom/SocketServer-mine.py	/^    def finish(self):$/;"	m	class:DatagramRequestHandler
+finish	tom/SocketServer-mine.py	/^    def finish(self):$/;"	m	class:StreamRequestHandler
+finish	tom/socketserver.py	/^	def finish(self):$/;"	m	class:MyRequestHandler
+finish_request	tom/SocketServer-mine.py	/^    def finish_request(self, request, client_address):$/;"	m	class:BaseServer
+fixclasspath	requests/lib/python2.7/site.py	/^def fixclasspath():$/;"	f
+flavour	vehicles.py	/^    def flavour(self,taste='tasty'):$/;"	m	class:Fruit
+folding	py25test.py	/^folding=[]$/;"	v
+follow	coroutines/dl/cobroadcast.py	/^def follow(thefile, target):$/;"	f
+follow	coroutines/dl/cobroadcast2.py	/^def follow(thefile, target):$/;"	f
+follow	coroutines/dl/cofollow.py	/^def follow(thefile, target):$/;"	f
+follow	coroutines/dl/copipe.py	/^def follow(thefile, target):$/;"	f
+follow	coroutines/dl/follow.py	/^def follow(thefile):$/;"	f
+foo	coroutines/dl/pyos1.py	/^    def foo():$/;"	f
+foo	coroutines/dl/pyos2.py	/^    def foo():$/;"	m	class:Scheduler
+foo	coroutines/dl/pyos3.py	/^    def foo():$/;"	m	class:Scheduler
+foo	coroutines/dl/pyos4.py	/^    def foo():$/;"	f
+foo	coroutines/dl/pyos5.py	/^    def foo():$/;"	m	class:KillTask
+foo	coroutines/dl/pyos6.py	/^    def foo():$/;"	m	class:WaitTask
+foo	coroutines/dl/task.py	/^    def foo():$/;"	f
+foo	coroutines/dl/taskcrash.py	/^def foo():$/;"	f
+force_global_eggs_after_local_site_packages	requests/lib/python2.7/site.py	/^def force_global_eggs_after_local_site_packages():$/;"	f
+format	template-script-orig.py	/^                    format='%(asctime)s %(levelname)s %(message)s')$/;"	v
+format	template-script.py	/^                    format='%(asctime)s %(levelname)s %(message)s')$/;"	v
+format	tom/bsp.py	/^        format = ">bbHIII%is" % len( response );$/;"	v
+fout	subprocess-test.py	/^fout=open('out.txt','w')$/;"	v
+fullname	sqlalchemy/sqltest.py	/^	fullname = Column(String)$/;"	v	class:User
+g	coroutines/dl/grep.py	/^    g = grep("python")$/;"	v
+g	coroutines/dl/grepclose.py	/^    g = grep("python")$/;"	v
+getVals	vehicles.py	/^    def getVals(self):$/;"	m	class:Bike
+get_request	tom/SocketServer-mine.py	/^    def get_request(self):$/;"	m	class:TCPServer
+get_request	tom/SocketServer-mine.py	/^    def get_request(self):$/;"	m	class:UDPServer
+grep	coroutines/dl/benchmark.py	/^def grep(pattern,target):$/;"	f
+grep	coroutines/dl/cobroadcast.py	/^def grep(pattern,target):$/;"	f
+grep	coroutines/dl/cobroadcast2.py	/^def grep(pattern,target):$/;"	f
+grep	coroutines/dl/copipe.py	/^def grep(pattern,target):$/;"	f
+grep	coroutines/dl/coroutine.py	/^    def grep(pattern):$/;"	f	function:coroutine
+grep	coroutines/dl/grep.py	/^def grep(pattern):$/;"	f
+grep	coroutines/dl/grepclose.py	/^def grep(pattern):$/;"	f
+grep	coroutines/dl/pipeline.py	/^def grep(pattern,lines):$/;"	f
+guess_type	tom/SimpleHTTPServer-mine.py	/^    def guess_type(self, path):$/;"	m	class:SimpleHTTPRequestHandler
+handle	coroutines/dl/echothread.py	/^    def handle(self):$/;"	m	class:EchoHandler
+handle	coroutines/dl/pyos4.py	/^    def handle(self):$/;"	m	class:GetTid
+handle	coroutines/dl/pyos4.py	/^    def handle(self):$/;"	m	class:SystemCall
+handle	coroutines/dl/pyos5.py	/^    def handle(self):$/;"	m	class:GetTid
+handle	coroutines/dl/pyos5.py	/^    def handle(self):$/;"	m	class:KillTask
+handle	coroutines/dl/pyos5.py	/^    def handle(self):$/;"	m	class:NewTask
+handle	coroutines/dl/pyos5.py	/^    def handle(self):$/;"	m	class:SystemCall
+handle	coroutines/dl/pyos6.py	/^    def handle(self):$/;"	m	class:GetTid
+handle	coroutines/dl/pyos6.py	/^    def handle(self):$/;"	m	class:KillTask
+handle	coroutines/dl/pyos6.py	/^    def handle(self):$/;"	m	class:NewTask
+handle	coroutines/dl/pyos6.py	/^    def handle(self):$/;"	m	class:SystemCall
+handle	coroutines/dl/pyos6.py	/^    def handle(self):$/;"	m	class:WaitTask
+handle	coroutines/dl/pyos7.py	/^    def handle(self):$/;"	m	class:GetTid
+handle	coroutines/dl/pyos7.py	/^    def handle(self):$/;"	m	class:KillTask
+handle	coroutines/dl/pyos7.py	/^    def handle(self):$/;"	m	class:NewTask
+handle	coroutines/dl/pyos7.py	/^    def handle(self):$/;"	m	class:ReadWait
+handle	coroutines/dl/pyos7.py	/^    def handle(self):$/;"	m	class:SystemCall
+handle	coroutines/dl/pyos7.py	/^    def handle(self):$/;"	m	class:WaitTask
+handle	coroutines/dl/pyos7.py	/^    def handle(self):$/;"	m	class:WriteWait
+handle	coroutines/dl/pyos8.py	/^    def handle(self):$/;"	m	class:GetTid
+handle	coroutines/dl/pyos8.py	/^    def handle(self):$/;"	m	class:KillTask
+handle	coroutines/dl/pyos8.py	/^    def handle(self):$/;"	m	class:NewTask
+handle	coroutines/dl/pyos8.py	/^    def handle(self):$/;"	m	class:ReadWait
+handle	coroutines/dl/pyos8.py	/^    def handle(self):$/;"	m	class:SystemCall
+handle	coroutines/dl/pyos8.py	/^    def handle(self):$/;"	m	class:WaitTask
+handle	coroutines/dl/pyos8.py	/^    def handle(self):$/;"	m	class:WriteWait
+handle	tom/SocketServer-mine.py	/^    def handle(self):$/;"	m	class:BaseRequestHandler
+handle	tom/socketserver.py	/^	def handle(self):$/;"	m	class:MyRequestHandler
+handle_client	coroutines/dl/echo1.py	/^def handle_client(client,addr):$/;"	f
+handle_client	coroutines/dl/echobad.py	/^def handle_client(client,addr):$/;"	f
+handle_client	coroutines/dl/echobad2.py	/^def handle_client(client,addr):$/;"	f
+handle_client	coroutines/dl/echogood.py	/^def handle_client(client,addr):$/;"	f
+handle_client	coroutines/dl/echogood2.py	/^def handle_client(client,addr):$/;"	f
+handle_client	coroutines/dl/echogood3.py	/^def handle_client(client,addr):$/;"	f
+handle_client	coroutines/dl/echoserver.py	/^def handle_client(client,addr):$/;"	f
+handle_client	coroutines/dl/echoserver2.py	/^def handle_client(client,addr):$/;"	f
+handle_error	tom/SocketServer-mine.py	/^    def handle_error(self, request, client_address):$/;"	m	class:BaseServer
+handle_request	tom/SocketServer-mine.py	/^    def handle_request(self):$/;"	m	class:BaseServer
+height	imageresize.py	/^height = 420$/;"	v
+httpHandler	tom/httpserver.py	/^class httpHandler(B.BaseHTTPRequestHandler):$/;"	c
+httpHandler	tom/socketserver.py	/^class httpHandler(B.BaseHTTPRequestHandler):$/;"	c
+httpServer	tom/httpserver.py	/^httpServer = B.HTTPServer((HOST,PORT), httpHandler)$/;"	v
+id	sqlalchemy/sqltest.py	/^	id = Column(Integer, primary_key=True)$/;"	v	class:Address
+id	sqlalchemy/sqltest.py	/^	id = Column(Integer,primary_key=True)$/;"	v	class:User
+im	image-downsize.py	/^    im = Image.open(infile)$/;"	v
+im1	imageresize.py	/^im1 = Image.open(imageFile)$/;"	v
+im2	imageresize.py	/^im2 = im1.resize((width, height), Image.NEAREST)      # use nearest neighbour$/;"	v
+im3	imageresize.py	/^im3 = im1.resize((width, height), Image.BILINEAR)     # linear interpolation in a 2x2 environment$/;"	v
+im4	imageresize.py	/^im4 = im1.resize((width, height), Image.BICUBIC)      # cubic spline interpolation in a 4x4 environment$/;"	v
+im5	imageresize.py	/^im5 = im1.resize((width, height), Image.ANTIALIAS)    # best down-sizing filter$/;"	v
+imageFile	imageresize.py	/^imageFile = "zFlowers.jpg"$/;"	v
+img	pylons/helloworld/helloworld/controllers/error.py	/^    def img(self, id):$/;"	m	class:ErrorController
+include_dirs	coroutines/dl/cxml/setup.py	/^                             include_dirs=['\/usr\/local\/include'],$/;"	v
+include_package_data	pylons/helloworld/setup.py	/^    include_package_data=True,$/;"	v
+index	pylons/helloworld/helloworld/controllers/hello.py	/^    def index(self):$/;"	m	class:HelloController
+initcxmlparse	coroutines/dl/cxml/cxmlparse.c	/^void initcxmlparse() {$/;"	f
+install_requires	pylons/helloworld/setup.py	/^    install_requires=[$/;"	v
+iopoll	coroutines/dl/pyos7.py	/^    def iopoll(self,timeout):$/;"	m	class:Scheduler
+iopoll	coroutines/dl/pyos8.py	/^    def iopoll(self,timeout):$/;"	m	class:Scheduler
+iotask	coroutines/dl/pyos7.py	/^    def iotask(self):$/;"	m	class:Scheduler
+iotask	coroutines/dl/pyos8.py	/^    def iotask(self):$/;"	m	class:Scheduler
+ips	coroutines/dl/logsim.py	/^ips = ['129.194.8.73', '198.37.27.153', '217.127.12.71',$/;"	v
+itemsa	listtest.py	/^itemsa=[$/;"	v
+joinuser	requests/lib/python2.7/site.py	/^    def joinuser(*args):$/;"	f	function:addusersitepackages
+k	sortingtest.py	/^def k(item):$/;"	f
+l	test.py	/^l = ['thing', 'done']$/;"	v
+lastride_date	django/bikesite/bikes/models.py	/^    lastride_date = models.DateTimeField('date published')$/;"	v	class:Bike
+libraries	coroutines/dl/cxml/setup.py	/^                             libraries=['expat'],$/;"	v
+library_dirs	coroutines/dl/cxml/setup.py	/^                             library_dirs=['\/usr\/local\/lib'],$/;"	v
+line	coroutines/dl/benchmark.py	/^line = 'python is nice'$/;"	v
+list_directory	tom/SimpleHTTPServer-mine.py	/^    def list_directory(self, path):$/;"	m	class:SimpleHTTPRequestHandler
+listenSock	tom/bsp.py	/^listenSock = bluetooth.BluetoothSocket( bluetooth.L2CAP )$/;"	v
+load	yaml/loadyaml.py	/^def load(f):$/;"	f
+load_environment	pylons/helloworld/helloworld/config/environment.py	/^def load_environment(global_conf, app_conf):$/;"	f
+log	pylons/helloworld/helloworld/controllers/hello.py	/^log = logging.getLogger(__name__)$/;"	v
+log	pylons/helloworld/helloworld/websetup.py	/^log = logging.getLogger(__name__)$/;"	v
+logfile	coroutines/dl/follow.py	/^    logfile = open("access-log")$/;"	v
+m	coroutines/dl/logsim.py	/^    m = random.randint(0,len(docs)-1)$/;"	v
+main	choosing.py	/^def main():$/;"	f
+main	coroutines/dl/pyos5.py	/^    def main():$/;"	m	class:KillTask
+main	coroutines/dl/pyos6.py	/^    def main():$/;"	m	class:WaitTask
+main	coroutines/dl/trampoline.py	/^def main():$/;"	f
+main	coroutines/dl/twistedecho.py	/^def main():$/;"	f
+main	optparsetest.py	/^def main():$/;"	f
+main	pylons/helloworld/ez_setup.py	/^def main(argv, version=DEFAULT_VERSION):$/;"	f
+main	requests/lib/python2.7/site.py	/^def main():$/;"	f
+main	template-script-orig.py	/^def main():$/;"	f
+main	template-script.py	/^def main():$/;"	f
+main	vehicles.py	/^def main():$/;"	f
+mainloop	coroutines/dl/pyos2.py	/^    def mainloop(self):$/;"	m	class:Scheduler
+mainloop	coroutines/dl/pyos3.py	/^    def mainloop(self):$/;"	m	class:Scheduler
+mainloop	coroutines/dl/pyos4.py	/^    def mainloop(self):$/;"	m	class:Scheduler
+mainloop	coroutines/dl/pyos5.py	/^    def mainloop(self):$/;"	m	class:Scheduler
+mainloop	coroutines/dl/pyos6.py	/^    def mainloop(self):$/;"	m	class:Scheduler
+mainloop	coroutines/dl/pyos7.py	/^    def mainloop(self):$/;"	m	class:Scheduler
+mainloop	coroutines/dl/pyos8.py	/^    def mainloop(self):$/;"	m	class:Scheduler
+make_app	pylons/helloworld/helloworld/config/middleware.py	/^def make_app(global_conf, full_stack=True, static_files=True, **app_conf):$/;"	f
+make_map	pylons/helloworld/helloworld/config/routing.py	/^def make_map():$/;"	f
+makepath	requests/lib/python2.7/site.py	/^def makepath(*paths):$/;"	f
+max_children	tom/SocketServer-mine.py	/^    max_children = 40$/;"	v	class:ForkingMixIn
+max_packet_size	tom/SocketServer-mine.py	/^    max_packet_size = 8192$/;"	v	class:UDPServer
+md5_data	pylons/helloworld/ez_setup.py	/^md5_data = {$/;"	v
+message	tom/httpserver.py	/^		message = self.rfile.readlines()$/;"	v	class:httpHandler
+msg	tom/bsp.py	/^        msg = struct.pack( format, 2, 4, len( response )+8, 0, 0, 0, response );$/;"	v
+mtn	py25test.py	/^mtn=[]$/;"	v
+multiply	dividing.py	/^def multiply$/;"	f
+multiway	choosing.py	/^def multiway():$/;"	f
+myDecorator	decorator.py	/^class myDecorator(object):$/;"	c
+myiter	iterators.py	/^class myiter:$/;"	c
+myquery	sqlalchemy/sqltest.py	/^def myquery():$/;"	f
+n	coroutines/dl/logsim.py	/^    n = random.randint(0,len(ips)-1)$/;"	v
+name	django/bikesite/bikes/models.py	/^    name  = models.CharField(max_length=200)$/;"	v	class:Part
+name	django/bikesite/bikes/models.py	/^    name = models.CharField(max_length=200)$/;"	v	class:Bike
+name	pylons/helloworld/setup.py	/^    name='helloworld',$/;"	v
+name	sqlalchemy/sqltest.py	/^	name = Column(String)$/;"	v	class:User
+name	stdio.py	/^name = sys.stdin$/;"	v
+nest	yaml/tmp.py	/^def nest(x):$/;"	f
+new	coroutines/dl/pyos2.py	/^    def new(self,target):$/;"	m	class:Scheduler
+new	coroutines/dl/pyos3.py	/^    def new(self,target):$/;"	m	class:Scheduler
+new	coroutines/dl/pyos4.py	/^    def new(self,target):$/;"	m	class:Scheduler
+new	coroutines/dl/pyos5.py	/^    def new(self,target):$/;"	m	class:Scheduler
+new	coroutines/dl/pyos6.py	/^    def new(self,target):$/;"	m	class:Scheduler
+new	coroutines/dl/pyos7.py	/^    def new(self,target):$/;"	m	class:Scheduler
+new	coroutines/dl/pyos8.py	/^    def new(self,target):$/;"	m	class:Scheduler
+next	iterators.py	/^	def next(self):$/;"	m	class:myiter
+null	coroutines/dl/benchmark.py	/^def null(): $/;"	f
+number	django/bikesite/bikes/models.py	/^    number = models.IntegerField()$/;"	v	class:Part
+p	coroutines/dl/cobroadcast2.py	/^    p = printer()$/;"	v
+p	coroutines/dl/cocrash.py	/^p = printer()$/;"	v
+p	coroutines/dl/coprocess.py	/^    p = subprocess.Popen(['python','busproc.py'],$/;"	v
+p	coroutines/dl/runblaster.py	/^    p = subprocess.Popen(['python','blaster.py'])$/;"	v
+p1	coroutines/dl/benchmark.py	/^p1   = grep('python',null())          # Coroutine$/;"	v
+p2	coroutines/dl/benchmark.py	/^p2   = GrepHandler('python',null())   # Object$/;"	v
+package_data	pylons/helloworld/setup.py	/^    package_data={'helloworld': ['i18n\/*\/LC_MESSAGES\/*.mo']},$/;"	v
+packages	pylons/helloworld/setup.py	/^    packages=find_packages(exclude=['ez_setup']),$/;"	v
+parse	coroutines/dl/cxml/cxmlparse.c	/^PyObject *parse(PyObject *self, PyObject *args) {$/;"	f
+parser	ntpscript.py	/^parser = OptionParser()$/;"	v
+password	sqlalchemy/sqltest.py	/^	password = Column(String)$/;"	v	class:User
+paster_plugins	pylons/helloworld/setup.py	/^    paster_plugins=['PasteScript', 'Pylons'],$/;"	v
+pats	choosing.py	/^pats=['abc123','Nice guy','Dont worry','Stuff here']$/;"	v
+poll	django/mysite/polls/models.py	/^    poll = models.ForeignKey(Poll)$/;"	v	class:Choice
+populate	sqlalchemy/sqltest.py	/^def populate():$/;"	f
+port	tom/bsp.py	/^port = 0x1007$/;"	v
+pp	lxml/lxmltest.py	/^def pp(element):$/;"	f
+printVals	vehicles.py	/^    def printVals(self):$/;"	m	class:Bike
+printer	coroutines/dl/cobroadcast.py	/^def printer():$/;"	f
+printer	coroutines/dl/cobroadcast2.py	/^def printer():$/;"	f
+printer	coroutines/dl/cofollow.py	/^def printer():$/;"	f
+printer	coroutines/dl/copipe.py	/^def printer():$/;"	f
+printer	coroutines/dl/cosax.py	/^    def printer():$/;"	f
+printer	coroutines/dl/cxml/test.py	/^def printer():$/;"	f
+process_request	tom/SocketServer-mine.py	/^    def process_request(self, request, client_address):$/;"	m	class:BaseServer
+process_request	tom/SocketServer-mine.py	/^    def process_request(self, request, client_address):$/;"	m	class:ForkingMixIn
+process_request	tom/SocketServer-mine.py	/^    def process_request(self, request, client_address):$/;"	m	class:ThreadingMixIn
+process_request_thread	tom/SocketServer-mine.py	/^    def process_request_thread(self, request, client_address):$/;"	m	class:ThreadingMixIn
+procs	coroutines/dl/runblaster.py	/^procs = []$/;"	v
+pub_date	django/mysite/polls/models.py	/^    pub_date = models.DateTimeField('date published')$/;"	v	class:Poll
+question	django/mysite/polls/models.py	/^    question = models.CharField(max_length=200)$/;"	v	class:Poll
+rbufsize	tom/SocketServer-mine.py	/^    rbufsize = -1$/;"	v	class:StreamRequestHandler
+recv	coroutines/dl/sockwrap.py	/^    def recv(self, maxbytes):$/;"	m	class:Socket
+recvfrom	coroutines/dl/coprocess.py	/^def recvfrom(f,target):$/;"	f
+removeduppaths	requests/lib/python2.7/site.py	/^def removeduppaths():$/;"	f
+request	services-test.py	/^  request = DNS.Request(qtype='srv')$/;"	v
+request	tom/bsp.py	/^        request = data[16:];$/;"	v
+request	tom/bsp.py	/^        request = request.rstrip();$/;"	v
+request_queue_size	coroutines/dl/echothread.py	/^    request_queue_size = 1024$/;"	v	class:MyServer
+request_queue_size	tom/SocketServer-mine.py	/^    request_queue_size = 5$/;"	v	class:TCPServer
+res	choosing.py	/^res=[]$/;"	v
+response	services-test.py	/^  response = request.req('_xmpp-server._tcp.%s.' % domain)$/;"	v
+response	tom/bsp.py	/^            response = "<!DOCTYPE html PUBLIC \\"-\/\/W3C\/\/DTD HTML 4.01 Transitional\/\/EN\\" \\"http:\/\/www.w3.org\/TR\/html4\/loose.dtd\\"><html><head><title>Hello<\/title><\/head><body>HelloWorld<\/body><\/html>"            $/;"	v
+response	tom/bsp.py	/^            response = "URL Failed";$/;"	v
+root	lxml/lxmltest.py	/^root = etree.Element("root")$/;"	v
+rpc_call	android.py	/^    def rpc_call(*args):$/;"	f	function:Android.__getattr__
+run	coroutines/dl/pyos1.py	/^    def run(self):$/;"	m	class:Task
+run	coroutines/dl/pyos2.py	/^    def run(self):$/;"	m	class:Task
+run	coroutines/dl/pyos3.py	/^    def run(self):$/;"	m	class:Task
+run	coroutines/dl/pyos4.py	/^    def run(self):$/;"	m	class:Task
+run	coroutines/dl/pyos5.py	/^    def run(self):$/;"	m	class:Task
+run	coroutines/dl/pyos6.py	/^    def run(self):$/;"	m	class:Task
+run	coroutines/dl/pyos7.py	/^    def run(self):$/;"	m	class:Task
+run	coroutines/dl/pyos8.py	/^    def run(self):$/;"	m	class:Task
+run	coroutines/dl/task.py	/^    def run(self):$/;"	m	class:Task
+run	coroutines/dl/trampoline.py	/^def run():$/;"	f
+run_target	coroutines/dl/cothread.py	/^    def run_target():$/;"	f	function:threaded
+s	coroutines/dl/blaster.py	/^    s = socket(AF_INET,SOCK_STREAM)$/;"	v
+s	smtp.py	/^s=smtplib.SMTP_SSL("smtp.mail.yahoo.com", port=465)$/;"	v
+s	socketclient.py	/^s = socket.socket($/;"	v
+s	sortingtest.py	/^s = sorted(L, key=k)$/;"	v
+saveto	pylons/helloworld/ez_setup.py	/^    saveto = os.path.join(to_dir, egg_name)$/;"	v
+sched	coroutines/dl/echo1.py	/^sched = Scheduler()$/;"	v
+sched	coroutines/dl/echobad.py	/^sched = Scheduler()$/;"	v
+sched	coroutines/dl/echobad2.py	/^sched = Scheduler()$/;"	v
+sched	coroutines/dl/echogood.py	/^sched = Scheduler()$/;"	v
+sched	coroutines/dl/echogood2.py	/^sched = Scheduler()$/;"	v
+sched	coroutines/dl/echogood3.py	/^sched = Scheduler()$/;"	v
+sched	coroutines/dl/echoserver.py	/^sched = Scheduler()$/;"	v
+sched	coroutines/dl/echoserver2.py	/^sched = Scheduler()$/;"	v
+sched	coroutines/dl/pyos2.py	/^    sched = Scheduler()$/;"	v	class:Scheduler
+sched	coroutines/dl/pyos3.py	/^    sched = Scheduler()$/;"	v	class:Scheduler
+sched	coroutines/dl/pyos4.py	/^    sched = Scheduler()$/;"	v
+sched	coroutines/dl/pyos5.py	/^    sched = Scheduler()$/;"	v	class:KillTask
+sched	coroutines/dl/pyos6.py	/^    sched = Scheduler()$/;"	v	class:WaitTask
+sched	coroutines/dl/taskcrash.py	/^sched = Scheduler()$/;"	v
+schedule	coroutines/dl/pyos2.py	/^    def schedule(self,task):$/;"	m	class:Scheduler
+schedule	coroutines/dl/pyos3.py	/^    def schedule(self,task):$/;"	m	class:Scheduler
+schedule	coroutines/dl/pyos4.py	/^    def schedule(self,task):$/;"	m	class:Scheduler
+schedule	coroutines/dl/pyos5.py	/^    def schedule(self,task):$/;"	m	class:Scheduler
+schedule	coroutines/dl/pyos6.py	/^    def schedule(self,task):$/;"	m	class:Scheduler
+schedule	coroutines/dl/pyos7.py	/^    def schedule(self,task):$/;"	m	class:Scheduler
+schedule	coroutines/dl/pyos8.py	/^    def schedule(self,task):$/;"	m	class:Scheduler
+send	coroutines/dl/benchmark.py	/^    def send(self,line):$/;"	m	class:GrepHandler
+send	coroutines/dl/sockwrap.py	/^    def send(self,buffer):$/;"	m	class:Socket
+send_head	tom/SimpleHTTPServer-mine.py	/^    def send_head(self):$/;"	m	class:SimpleHTTPRequestHandler
+send_message	coroutines/dl/blaster.py	/^def send_message(dest):$/;"	f
+send_message	django/bikesite/bikes/views.py	/^def send_message(request):$/;"	f
+send_meth	coroutines/dl/cxml/cxmlparse.c	/^static PyObject *send_meth;$/;"	v	file:
+send_random	coroutines/dl/blaster.py	/^def send_random(count):$/;"	f
+send_text	coroutines/dl/cxml/cxmlparse.c	/^void send_text() {$/;"	f
+sendto	coroutines/dl/coprocess.py	/^def sendto(f):$/;"	f
+serv	coroutines/dl/echothread.py	/^serv = MyServer(("",45000),EchoHandler)$/;"	v
+serve_forever	tom/SocketServer-mine.py	/^    def serve_forever(self):$/;"	m	class:BaseServer
+server	coroutines/dl/echo1.py	/^def server(port):$/;"	f
+server	coroutines/dl/echobad.py	/^def server(port):$/;"	f
+server	coroutines/dl/echobad2.py	/^def server(port):$/;"	f
+server	coroutines/dl/echogood.py	/^def server(port):$/;"	f
+server	coroutines/dl/echogood2.py	/^def server(port):$/;"	f
+server	coroutines/dl/echogood3.py	/^def server(port):$/;"	f
+server	coroutines/dl/echoserver.py	/^def server(port):$/;"	f
+server	coroutines/dl/echoserver2.py	/^def server(port):$/;"	f
+server_activate	tom/SocketServer-mine.py	/^    def server_activate(self):$/;"	m	class:BaseServer
+server_activate	tom/SocketServer-mine.py	/^    def server_activate(self):$/;"	m	class:TCPServer
+server_activate	tom/SocketServer-mine.py	/^    def server_activate(self):$/;"	m	class:UDPServer
+server_bind	tom/SocketServer-mine.py	/^    def server_bind(self):$/;"	m	class:TCPServer
+server_close	tom/SocketServer-mine.py	/^    def server_close(self):$/;"	m	class:BaseServer
+server_close	tom/SocketServer-mine.py	/^    def server_close(self):$/;"	m	class:TCPServer
+server_version	tom/SimpleHTTPServer-mine.py	/^    server_version = "SimpleHTTP\/" + __version__$/;"	v	class:SimpleHTTPRequestHandler
+serversocket	socketserver.py	/^serversocket = socket.socket($/;"	v
+services	services-test.py	/^  services = [service['data'] for service in response.answers]$/;"	v
+setBEGINLIBPATH	requests/lib/python2.7/site.py	/^def setBEGINLIBPATH():$/;"	f
+setUp	dividing.py	/^    def setUp(self):$/;"	m	class:TestUM
+setUp	optparsetest-test.py	/^    def setUp(self):$/;"	m	class:TestOptparse
+setcopyright	requests/lib/python2.7/site.py	/^def setcopyright():$/;"	f
+setencoding	requests/lib/python2.7/site.py	/^def setencoding():$/;"	f
+sethelper	requests/lib/python2.7/site.py	/^def sethelper():$/;"	f
+setquit	requests/lib/python2.7/site.py	/^def setquit():$/;"	f
+setup	tom/SocketServer-mine.py	/^    def setup(self):$/;"	m	class:BaseRequestHandler
+setup	tom/SocketServer-mine.py	/^    def setup(self):$/;"	m	class:DatagramRequestHandler
+setup	tom/SocketServer-mine.py	/^    def setup(self):$/;"	m	class:StreamRequestHandler
+setup	tom/socketserver.py	/^	def setup(self):$/;"	m	class:MyRequestHandler
+setup_app	pylons/helloworld/helloworld/websetup.py	/^def setup_app(command, conf, vars):$/;"	f
+size	image-downsize.py	/^size = 256,256$/;"	v
+socket_type	tom/SocketServer-mine.py	/^    socket_type = socket.SOCK_DGRAM$/;"	v	class:UDPServer
+socket_type	tom/SocketServer-mine.py	/^    socket_type = socket.SOCK_STREAM$/;"	v	class:TCPServer
+src	pylons/helloworld/ez_setup.py	/^            src = urllib2.urlopen(url)$/;"	v
+start	coroutines/dl/coroutine.py	/^    def start(*args,**kwargs):$/;"	f	function:coroutine
+start	coroutines/dl/cxml/test.py	/^    def start(*args,**kwargs):$/;"	f	function:coroutine
+start	coroutines/dl/runblaster.py	/^start = time.time()$/;"	v
+start	vehicles.py	/^    def start(self,speed=0):$/;"	m	class:Bike
+start	vehicles.py	/^    def start(self,speed=0):$/;"	m	class:Car
+startElement	coroutines/dl/basicsax.py	/^    def startElement(self,name,attrs):$/;"	m	class:MyHandler
+startElement	coroutines/dl/cosax.py	/^    def startElement(self,name,attrs):$/;"	m	class:EventHandler
+start_hndl	coroutines/dl/cxml/cxmlparse.c	/^void start_hndl(void *data, const char *el, const char **attrs) {$/;"	f
+stdin	coroutines/dl/coprocess.py	/^                         stdin=subprocess.PIPE)$/;"	v
+style	pylons/helloworld/helloworld/controllers/error.py	/^    def style(self, id):$/;"	m	class:ErrorController
+t	coroutines/dl/logsim.py	/^    t = time.time()$/;"	v
+t	ntpscript.py	/^        t = struct.unpack( '!12I', data )[10]$/;"	v
+t1	coroutines/dl/pyos1.py	/^    t1 = Task(foo())$/;"	v
+t1	coroutines/dl/task.py	/^    t1 = Task(foo())$/;"	v
+target	coroutines/dl/cocrash.py	/^target = broadcast([threaded(grep('foo',p)),$/;"	v
+taskid	coroutines/dl/pyos1.py	/^    taskid = 0$/;"	v	class:Task
+taskid	coroutines/dl/pyos2.py	/^    taskid = 0$/;"	v	class:Task
+taskid	coroutines/dl/pyos3.py	/^    taskid = 0$/;"	v	class:Task
+taskid	coroutines/dl/pyos4.py	/^    taskid = 0$/;"	v	class:Task
+taskid	coroutines/dl/pyos5.py	/^    taskid = 0$/;"	v	class:Task
+taskid	coroutines/dl/pyos6.py	/^    taskid = 0$/;"	v	class:Task
+taskid	coroutines/dl/pyos7.py	/^    taskid = 0$/;"	v	class:Task
+taskid	coroutines/dl/pyos8.py	/^    taskid = 0$/;"	v	class:Task
+taskid	coroutines/dl/task.py	/^    taskid = 0$/;"	v	class:Task
+tcpCliSock	tom/socketclient.py	/^tcpCliSock = socket(AF_INET, SOCK_STREAM)$/;"	v
+tcpServ	tom/socketserver.py	/^tcpServ = TCP(ADDR, MyRequestHandler)$/;"	v
+tearDown	optparsetest-test.py	/^    def tearDown(self):$/;"	m	class:TestOptparse
+test	bike.py	/^def test():$/;"	f
+test	choosing.py	/^def test():$/;"	f
+test	py25test.py	/^def test():$/;"	f
+test	sqlalchemy/sqltest.py	/^def test():$/;"	f
+test	tom/SimpleHTTPServer-mine.py	/^def test(HandlerClass = SimpleHTTPRequestHandler,$/;"	f
+testArgs	optparsetest-test.py	/^    def testArgs(self):$/;"	m	class:TestOptparse
+test_index	pylons/helloworld/helloworld/tests/functional/test_hello.py	/^    def test_index(self):$/;"	m	class:TestHelloController
+test_numbers_3_4	dividing.py	/^    def test_numbers_3_4(self):$/;"	m	class:TestUM
+test_strings_a_3	dividing.py	/^    def test_strings_a_3(self):$/;"	m	class:TestUM
+test_suite	pylons/helloworld/setup.py	/^    test_suite='nose.collector',$/;"	v
+text_collector	coroutines/dl/buses2.py	/^def text_collector(target):$/;"	f
+textbuf	coroutines/dl/cxml/cxmlparse.c	/^static char     *textbuf[TEXT_BUF_SIZE];$/;"	v	file:
+textindex	coroutines/dl/cxml/cxmlparse.c	/^static int       textindex = 0;$/;"	v	file:
+threaded	coroutines/dl/cothread.py	/^def threaded(target):$/;"	f
+top	yaml/tmp.py	/^top=['fruit','cars',['a','b']]$/;"	v
+translate_path	tom/SimpleHTTPServer-mine.py	/^    def translate_path(self, path):$/;"	m	class:SimpleHTTPRequestHandler
+type	django/bikesite/bikes/models.py	/^    type = models.CharField(max_length=200)$/;"	v	class:Bike
+update_md5	pylons/helloworld/ez_setup.py	/^def update_md5(filenames):$/;"	f
+url	pylons/helloworld/ez_setup.py	/^    url = download_base + egg_name$/;"	v
+url	pylons/helloworld/setup.py	/^    url='',$/;"	v
+urlpatterns	django/bikesite/urls.py	/^urlpatterns = patterns('',$/;"	v
+urlpatterns	django/mysite/urls.py	/^urlpatterns = patterns('',$/;"	v
+use_setuptools	pylons/helloworld/ez_setup.py	/^def use_setuptools($/;"	f
+user	sqlalchemy/sqltest.py	/^	user = relation(User, backref=backref('addresses', order_by=id))$/;"	v	class:Address
+user_id	sqlalchemy/sqltest.py	/^	user_id = Column(Integer, ForeignKey('users.id'))$/;"	v	class:Address
+vbox	gtktest.py	/^vbox = gtk.VBox()$/;"	v
+verify_request	tom/SocketServer-mine.py	/^    def verify_request(self, request, client_address):$/;"	m	class:BaseServer
+version	pylons/helloworld/setup.py	/^    version='0.1',$/;"	v
+virtual_addsitepackages	requests/lib/python2.7/site.py	/^def virtual_addsitepackages(known_paths):$/;"	f
+virtual_install_main_packages	requests/lib/python2.7/site.py	/^def virtual_install_main_packages():$/;"	f
+votes	django/mysite/polls/models.py	/^    votes = models.IntegerField()$/;"	v	class:Choice
+waitforexit	coroutines/dl/pyos6.py	/^    def waitforexit(self,task,waittid):$/;"	m	class:Scheduler
+waitforexit	coroutines/dl/pyos7.py	/^    def waitforexit(self,task,waittid):$/;"	m	class:Scheduler
+waitforexit	coroutines/dl/pyos8.py	/^    def waitforexit(self,task,waittid):$/;"	m	class:Scheduler
+waitforread	coroutines/dl/pyos7.py	/^    def waitforread(self,task,fd):$/;"	m	class:Scheduler
+waitforread	coroutines/dl/pyos8.py	/^    def waitforread(self,task,fd):$/;"	m	class:Scheduler
+waitforwrite	coroutines/dl/pyos7.py	/^    def waitforwrite(self,task,fd):$/;"	m	class:Scheduler
+waitforwrite	coroutines/dl/pyos8.py	/^    def waitforwrite(self,task,fd):$/;"	m	class:Scheduler
+was_imported	pylons/helloworld/ez_setup.py	/^    was_imported = 'pkg_resources' in sys.modules or 'setuptools' in sys.modules$/;"	v
+wbufsize	tom/SocketServer-mine.py	/^    wbufsize = 0$/;"	v	class:StreamRequestHandler
+width	imageresize.py	/^width = 500$/;"	v
+win	gtktest.py	/^win = gtk.Window()$/;"	v
+zip_safe	pylons/helloworld/setup.py	/^    zip_safe=False,$/;"	v

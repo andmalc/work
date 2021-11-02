@@ -1,0 +1,8 @@
+---
+-   hosts: digital
+    gather_facts: False
+    tasks:
+    -   name: Sync from host to local
+        local_action: shell rsync -va {{inventory_hostname}}:/home/andmalc/work /home/andmalc/
+        register: result
+    -   debug: var=result

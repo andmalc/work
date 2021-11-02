@@ -1,0 +1,32 @@
+#cloud-config
+users:
+  - name: andmalc
+    sudo: ['ALL=(ALL) NOPASSWD:ALL']
+    # ghandi
+    passwd: $1$xyz$t44JZlDR.1B9O2PLLAKXL/
+    groups:
+      - wheel
+    # ssh_pwauth: True
+    ssh_authorized_keys:
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAILHaR6k8nXWY5oeUeWHp7oTqMABAGIYOJegQGGGetujX ed25519
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC/zlieuEIsazbUjECH4FnPV1G51orZEH3TMWj+gxqpfkK0P5LfTOJ8FvHVTcsG/S6HFDrxTTYJ/6XNFz9ldTjTRNxdyFHUTcZ4f9IqK/+PUo6V/SRU49nVH7y0JcZaowPMrt27CaQByKV/WRC31HDLIEY4HG68TWhlfKk9HUIyP39xh6OTqUUaholpcdSZGdvYoueYAx91AGP/dwvC+81nYHQYLt/NqLoU62K1BzmObi7eNg9xwgBZJ+aA08d14bGJecl8GbMGOkSqEctkqdK5l9h5UYDa/Ggx2mYxCS24IgSm7ihcJf22wCtDTXnhOiTY/kFfG0SnkEPOCfoohZcX andmalc
+    shell: /usr/bin/zsh
+
+runcmd:
+  - systemctl start firewalld
+  - firewall-cmd --zone=public --add-port=2292/tcp
+  - firewall-cmd --reload
+  - semanage port -a -t ssh_port_t -p tcp 2292
+  - sed -i -e '/^#Port/s/^.*$/Port 2292/' /etc/ssh/sshd_config
+  - sed -i -e '/^#PermitRootLogin/s/^.*$/PermitRootLogin without-password/' /etc/ssh/sshd_config
+  - sed -i -e '$aAllowUsers andmalc root' /etc/ssh/sshd_config
+  - systemctl reload sshd
+
+package_upgrade: true
+packages:
+  - zsh
+  - tmux
+  - vim-enhanced
+  - git
+
+# vim: autoindent sw=2 ts=2 expandtab

@@ -1,0 +1,51 @@
+model: PS 1234 
+code: 23434
+reports:
+    -   name: Wireless Config Page
+        type: network-config
+        description: wireless and product info
+        buttons: 123
+notes: |
+    This is just like a thing print
+    Not as good as a blah printer
+
+---
+model: PS 4101
+code: 1234
+colour: red
+buttons: 
+    - ons
+    - cancel
+features:
+    printing: 
+        - duplex
+        - double sided
+reports: 
+    -   name: self-test
+        type: self-test
+        buttons: cancel+OK
+        description: print samples + info
+    -   name: Network Configuration Page
+        type: network-config
+        buttons: Resume + wireless
+notes: 
+    Don't worry about 
+    blah and blah
+---
+#basic nested seq
+-
+    - a
+    - b
+    - c
+-
+    - d
+    - d
+---
+#nested sequence
+- fruit
+- - 2.1
+#  - 2.2
+#- - - 2.2.1
+#    - 2.2.2
+#    - 2.2.3
+

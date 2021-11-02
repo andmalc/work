@@ -1,0 +1,9 @@
+- hosts: localhost
+  connection: local
+  sudo: True
+  tasks:
+  - 
+  name: Install Fail2Ban
+  dnf:
+	name: fail2ban
+	state: latest
