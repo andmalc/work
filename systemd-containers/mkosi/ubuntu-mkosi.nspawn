@@ -1,0 +1,7 @@
+
+[Exec]
+Boot=yes
+#User=andmalc #does not auto login user - not sure what this does
+
+[Network]
+#VirtualEthernet=yes #not needed

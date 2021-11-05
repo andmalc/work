@@ -1,0 +1,14 @@
+
+Dirs
+mkosi.cache
+mkosi.extra
+mkosi.output
+
+Files
+mkosi.postinst
+	exec
+mkosi.default
+<image>.nspawn
+	same location as image
+
+

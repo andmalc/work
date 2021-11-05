@@ -1,0 +1,12 @@
+
+useradd -m --btrfs-subvolume-home -p g andmalc
+usermod -a -G sudo andmalc
+
+# don't ask me any questions, apt
+export DEBIAN_FRONTEND=noninteractive
+
+# update package lists
+apt-get -y update
+
+# install updates
+apt-get -y upgrade
