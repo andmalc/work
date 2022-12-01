@@ -1,9 +1,0 @@
----
--  hosts: all
-   sudo: yes
-   gather_facts: no
-   tasks:
-   -  name: Push pub key to target root's authorized keys
-      copy: src=~/.ssh/andmalc.pub dest=/root/.ssh/authorized_keys owner=root mode=0600
-      register: rsa
-      ignore_errors: yes

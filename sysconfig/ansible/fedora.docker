@@ -1,4 +1,0 @@
-From: fedora25-ansible-custom 
-RUN ansible-playbook test.yaml -i 'localhost' --conection=local
-
-CMD ["/bin/bash"]
