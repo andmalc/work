@@ -1,0 +1,27 @@
+set shell := ["fish","-c"]
+
+#Add local bin and share
+directories:
+	if not test -d ~/.local/bin; mkdir -p ~/.local/bin; end
+	if not test -d ~/.local/share; mkdir -p ~/.local/share; end
+
+#Fisher
+fisher:
+	#install to location $fisher_path
+	curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+	#install plugins in fish_plugins
+	fisher update
+
+# Broot file browser
+broot:
+	sudo dnf copr enable -y petersen/broot
+	sudo dnf update -y
+	sudo dnf install -y broot
+
+#Nvim
+nvim:
+	if not test -d ~/tmp/nvimswp; mkdir -p ~/tmp/nvimswp; end
+	
+test:
+	host := `uname -a`
+	echo {{host}}
