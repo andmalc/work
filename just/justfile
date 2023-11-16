@@ -5,6 +5,21 @@ directories:
 	if not test -d ~/.local/bin; mkdir -p ~/.local/bin; end
 	if not test -d ~/.local/share; mkdir -p ~/.local/share; end
 
+#Chezmoi
+chezmoi:
+	#Installs to local bin
+	sh -c "$(curl -fsLS get.chezmoi.io/lb)"
+
+#Eget  https://github.com/zyedidia/eget
+eget:
+	curl https://zyedidia.github.io/eget.sh | sh
+	mv eget ~/.local/bin
+
+#zellig
+zellig:
+	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
+
+	
 #Fisher
 fisher:
 	#install to location $fisher_path
@@ -12,7 +27,7 @@ fisher:
 	#install plugins in fish_plugins
 	fisher update
 
-# Broot file browser
+#Broot file browser
 broot:
 	sudo dnf copr enable -y petersen/broot
 	sudo dnf update -y
@@ -20,8 +35,5 @@ broot:
 
 #Nvim
 nvim:
-	if not test -d ~/tmp/nvimswp; mkdir -p ~/tmp/nvimswp; end
-	
-test:
-	host := `uname -a`
-	echo {{host}}
+	sudo dnf update -y
+	sudo dnf install -y neovim
