@@ -1,5 +1,9 @@
 set shell := ["fish","-c"]
 
+testcd:
+	cd {$HOME}
+	ls
+
 #Add local bin and share
 directories:
 	if not test -d ~/.local/bin; mkdir -p ~/.local/bin; end
@@ -9,23 +13,18 @@ directories:
 chezmoi:
 	#Installs to local bin
 	sh -c "$(curl -fsLS get.chezmoi.io/lb)"
+	cd {$HOME} && sh -c "$(curl -fsLS get.chezmoi.io/lb)"
+
+chezmoi-init:
+	chezmoi init andmalc
+	chezmoi diff
+	#chezmoi apply
 
 #Eget  https://github.com/zyedidia/eget
 eget:
 	curl https://zyedidia.github.io/eget.sh | sh
 	mv eget ~/.local/bin
 
-#zellig
-zellig:
-	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
-
-	
-#Fisher
-fisher:
-	#install to location $fisher_path
-	curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-	#install plugins in fish_plugins
-	fisher update
 
 #Broot file browser
 broot:
@@ -33,7 +32,28 @@ broot:
 	sudo dnf update -y
 	sudo dnf install -y broot
 
+#Fisher
+fisher:
+	#install to location $fisher_path
+	curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+	#install plugins in fish_plugins
+	fisher update
+
+#Micro
+micro:
+	sudo dnf install -y micro
+
 #Nvim
 nvim:
 	sudo dnf update -y
 	sudo dnf install -y neovim
+
+#Vim-Plug
+vim-plug:
+	sh -c "curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+
+
+#Zellig
+zellig:
+	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
+
