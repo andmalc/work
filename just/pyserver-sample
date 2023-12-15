@@ -1,0 +1,21 @@
+# from https://luke.hsiao.dev/blog/housing-documentation/
+# Serve docs locally
+serve:
+    #!/usr/bin/env bash
+    set -euxo pipefail
+    VENV_PATH="{{justfile_directory()}}/.venv-docs/"
+
+    cd {{justfile_directory()}}/docs;
+    if [ ! -d $VENV_PATH ]; then
+        echo "${VENV_PATH} not found, creating one...";
+        python -m venv $VENV_PATH;
+        source ${VENV_PATH}bin/activate;
+        pip install --upgrade pip;
+        pip install -r requirements.txt;
+        mkdocs serve
+    else
+        echo "${VENV_PATH} already found.";
+        source ${VENV_PATH}bin/activate;
+        mkdocs serve
+    fi;
+
