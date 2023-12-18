@@ -12,11 +12,12 @@ directories:
 #Chezmoi
 chezmoi:
 	#Installs to local bin
-	sh -c "$(curl -fsLS get.chezmoi.io/lb)"
+	#sh -c "$(curl -fsLS get.chezmoi.io/lb)"
 	cd {$HOME} && sh -c "$(curl -fsLS get.chezmoi.io/lb)"
 
 chezmoi-init:
-	chezmoi init andmalc
+	eval (ssh-agent -c)
+	chezmoi init git@github.com:andmalc/dotfiles.git
 	chezmoi diff
 	#chezmoi apply
 
