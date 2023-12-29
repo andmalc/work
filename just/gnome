@@ -1,7 +1,14 @@
 
+set shell := ["fish","-c"]
 
 # Install extentions
 # Clone extension source then
-	#  gnome-extensions enable "clipboard-indicator@tudmotu.com
+#  gnome-extensions enable "clipboard-indicator@tudmotu.com
 
+## Gnome Extensions
 
+v-shell:
+	sudo dnf in -y gettext make
+	cd {$HOME}/tmp && git clone https://github.com/G-dH/vertical-workspaces
+	cd virtual-workspaces, make install
+	log out and in then enable
