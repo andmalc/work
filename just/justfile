@@ -26,7 +26,7 @@ eget:
 	curl https://zyedidia.github.io/eget.sh | sh
 	mv eget ~/.local/bin
 
-
+# Apps {{{1
 #Broot file browser
 broot:
 	sudo dnf copr enable -y petersen/broot
@@ -48,6 +48,10 @@ micro:
 nvim:
 	sudo dnf update -y
 	sudo dnf install -y neovim
+
+#sd - sed alternative
+sd:
+	eget --to ~/.local/bin/ --asset musl chmln/sd
 
 #Vim-Plug
 vim-plug:
