@@ -5,5 +5,5 @@ Requires
 
 ssh keys for chezmoi repo clone
 
-
+$ sudo dnf in just fish
 
