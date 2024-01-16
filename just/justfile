@@ -11,7 +11,7 @@ directories:
 
 #Fedora console apps {{{1
 dnf-misc:
-	sudo dnf install -y micro ugrep fd-find wget 
+	sudo dnf install -y micro ugrep fd-find wget duf mosh bat 
 
 
 #Fish config and Fisher plugin manager {{{1
