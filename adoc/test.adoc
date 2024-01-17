@@ -3,8 +3,13 @@
 :doctype: book
 // For nice admonition and callout icons.
 :icons: font
-:toc: left
+//:toc: left
 
+Ne wline
+
+****
+Sidebar?
+****
 
 Element Types:
 

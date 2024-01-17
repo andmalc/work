@@ -12,3 +12,19 @@ v-shell:
 	cd {$HOME}/tmp && git clone https://github.com/G-dH/vertical-workspaces
 	cd virtual-workspaces, make install
 	log out and in then enable
+
+
+#Desktop backgrond color
+desktop-color:
+	gsettings set org.gnome.desktop.background picture-options 'none'
+	gsettings set org.gnome.desktop.background primary-color '#HEX' # https://www.color-hex.com/color-palette/6060
+
+#Keyboard customization
+keyboard:
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up  "['<Control><Alt>Up', '<Super>Page_Up']"
+	gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down  "['<Control><Alt>Down', '<Super>Page_Down']"
+
+#TODO: Assign Switch Windows to Alt-Tab. This should disable Switch Applications
+
+
+# vim: fdm=marker ft=make

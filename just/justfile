@@ -3,7 +3,7 @@
 set shell := ["fish","-c"]
 set ignore-comments
 
-#Add directories {{{1
+# Add directories {{{1
 directories:
 	if not test -d ~/.local/bin; mkdir -p ~/.local/bin; end
 	if not test -d ~/.local/share; mkdir -p ~/.local/share; end
@@ -70,4 +70,4 @@ elvish:
 	#alternative curl -s -L <URL>
 
 
-# vim:fdm=marker
+# vim: fdm=marker ft=make
