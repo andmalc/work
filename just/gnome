@@ -26,5 +26,7 @@ keyboard:
 
 #TODO: Assign Switch Windows to Alt-Tab. This should disable Switch Applications
 
+#Raise volumne
+gsettings set org.gnome.desktop.sound allow-volume-above-100-percent true
 
 # vim: fdm=marker ft=make

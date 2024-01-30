@@ -11,7 +11,7 @@ directories:
 
 #Fedora console apps {{{1
 dnf-misc:
-	sudo dnf install -y micro ugrep fd-find wget duf mosh bat 
+	sudo dnf install -y micro ugrep fd-find wget duf mosh bat fzf fastfetch
 
 
 #Fish config and Fisher plugin manager {{{1
@@ -39,10 +39,10 @@ nvim-nightly:
 	#Nvim-Plug
 	sh -c "curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
-#Chezmoi {{{1
-chezmoi:
+# Chezmoi {{{1
+chezmoi-install-init:
 	#Installs to local bin
-	sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply git@github.com:andmalc/dotfiles.git
+	sh -c "$(curl -fsLS get.chezmoi.io/lb)" -- init --apply git@github.com:andmalc/dotfiles.git
 
 
 #Eget https://github.com/zyedidia/eget {{{1
