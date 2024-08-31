@@ -1,7 +1,11 @@
-# Prerequisites: just and fish
+G# Prerequisites: just and fish
 
 set shell := ["fish","-c"]
 set ignore-comments
+
+# Echo home
+echo-home:
+		ls ~/.local/bin
 
 # Add directories {{{1
 directories:
@@ -50,15 +54,17 @@ eget:
 	curl https://zyedidia.github.io/eget.sh | sh
 	mv eget ~/.local/bin
 
+#Eget installed apps {{{1
+
+## Micro
+micro:
+	eget zyedidia/micro --upgrade-only --to ~/.local/bin/ 
 
 #Broot file browser {{{1
 broot:
 	sudo dnf copr enable -y petersen/broot
 	sudo dnf update -y
 	sudo dnf install -y broot
-
-
-
 
 #Zellij {{{1
 zellij:
