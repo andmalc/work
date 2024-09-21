@@ -1,4 +1,4 @@
-G# Prerequisites: just and fish
+# Prerequisites: just and fish
 
 set shell := ["fish","-c"]
 set ignore-comments
@@ -56,24 +56,28 @@ eget:
 
 #Eget installed apps {{{1
 
-## Micro
+# Micro
 micro:
 	eget zyedidia/micro --upgrade-only --to ~/.local/bin/ 
 
-#Broot file browser {{{1
+# Broot file browser {{{1
 broot:
 	sudo dnf copr enable -y petersen/broot
 	sudo dnf update -y
 	sudo dnf install -y broot
 
-#Zellij {{{1
+# Zellij {{{1
 zellij:
 	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
 
-#Elvish shell {{{1
+# Elvish shell {{{1
 elvish:
 	wget -O - https://dl.elv.sh/linux-386/elvish-HEAD.tar.gz | tar xzvf - -C ~/.local/bin  --show-transformed  --transform='s/-HEAD//'
 	#alternative curl -s -L <URL>
 
+# Bitwarden Appimage
+bitwarden:
+	#Desktop file and icon png should be in ~/.local/share/application via chezmoi
+	wget -O ~/.local/bin/bitwarden.appimage https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=appimage
 
 # vim: fdm=marker ft=make
