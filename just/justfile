@@ -1,4 +1,4 @@
-#Prerequisites: just and fish
+# Prerequisites: just and fish
 
 set shell := ["fish","-c"]
 set ignore-comments
@@ -16,6 +16,12 @@ directories:
 #Fedora console apps {{{1
 dnf-misc:
 	sudo dnf install -y micro ugrep fd-find wget duf mosh bat fzf fastfetch
+
+# Batextras
+batextras:
+	sudo dnf install dnf-plugins-core 
+	sudo dnf copr enable awood/bat-extras
+	sudo dnf install bat-extras
 
 
 #Fish config and Fisher plugin manager {{{1
@@ -49,6 +55,21 @@ chezmoi-install-init:
 	sh -c "$(curl -fsLS get.chezmoi.io/lb)" -- init --apply git@github.com:andmalc/dotfiles.git
 
 
+# Broot file browser {{{1
+broot:
+	sudo dnf copr enable -y petersen/broot
+	sudo dnf update -y
+	sudo dnf install -y broot
+
+# Elvish shell {{{1
+elvish:
+	wget -O - https://dl.elv.sh/linux-386/elvish-HEAD.tar.gz | tar xzvf - -C ~/.local/bin  --show-transformed  --transform='s/-HEAD//'
+	#alternative curl -s -L <URL>
+
+# Bitwarden Appimage
+bitwarden:
+	#Desktop file and icon png should be in ~/.local/share/application via chezmoi
+	wget -O ~/.local/bin/bitwarden.appimage https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=appimage
 #Eget https://github.com/zyedidia/eget {{{1
 eget:
 	curl https://zyedidia.github.io/eget.sh | sh
@@ -56,24 +77,13 @@ eget:
 
 #Eget installed apps {{{1
 
-## Micro
+# Micro {{{2
 micro:
 	eget zyedidia/micro --upgrade-only --to ~/.local/bin/ 
 
-#Broot file browser {{{1
-broot:
-	sudo dnf copr enable -y petersen/broot
-	sudo dnf update -y
-	sudo dnf install -y broot
-
-#Zellij {{{1
+# Zellij {{{2
 zellij:
 	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
-
-#Elvish shell {{{1
-elvish:
-	wget -O - https://dl.elv.sh/linux-386/elvish-HEAD.tar.gz | tar xzvf - -C ~/.local/bin  --show-transformed  --transform='s/-HEAD//'
-	#alternative curl -s -L <URL>
 
 
 # vim: fdm=marker ft=make
