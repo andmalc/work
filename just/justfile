@@ -1,4 +1,4 @@
-G# Prerequisites: just and fish
+#Prerequisites: just and fish
 
 set shell := ["fish","-c"]
 set ignore-comments
