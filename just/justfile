@@ -15,7 +15,7 @@ directories:
 
 #Fedora console apps {{{1
 dnf-misc:
-	sudo dnf install -y micro ugrep fd-find wget duf mosh bat fzf fastfetch
+	sudo dnf install -y micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo
 
 # Batextras
 batextras:
@@ -27,11 +27,9 @@ batextras:
 #Fish config and Fisher plugin manager {{{1
 fish_shell:
 	sudo chsh -s /usr/bin/fish andmalc
-	#Fisher install to location $fisher_path
+	#Fisher install to ~/.config/fish/functions
 	curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
-	#install plugins in fish_plugins
-	
-	#TODO - how to run 'fisher update'
+	fisher update
 
 #Fish plugins additional
 #fish_fisher_additional:
@@ -42,8 +40,9 @@ fish_shell:
 
 #Nvim {{{1
 nvim-nightly:
+	# Pulls in 51MB of dependencies
 	sudo dnf copr enable agriffis/neovim-nightly
-	sudo dnf install -y neovim python3-neovim
+	sudo dnf install  neovim python3-neovim
 
 	#sudo dnf install -y neovim
 	#Nvim-Plug
