@@ -42,7 +42,7 @@ fish_shell:
 nvim-nightly:
 	# Pulls in 51MB of dependencies
 	sudo dnf copr enable agriffis/neovim-nightly
-	sudo dnf install  neovim python3-neovim
+	sudo dnf install --setopt install_weak_deps=False neovim python3-neovim
 
 	#sudo dnf install -y neovim
 	#Nvim-Plug
