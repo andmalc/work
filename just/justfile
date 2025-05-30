@@ -3,10 +3,6 @@
 set shell := ["fish","-c"]
 set ignore-comments
 
-# Echo home
-echo-home:
-		ls ~/.local/bin
-
 # Add directories {{{1
 directories:
 	if not test -d ~/.local/bin; mkdir -p ~/.local/bin; end
@@ -15,10 +11,10 @@ directories:
 
 #Fedora console apps {{{1
 dnf-misc:
-	sudo dnf install -y micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo
+	sudo dnf install -y micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank
 
 # Batextras
-batextras:
+bat extras:
 	sudo dnf install dnf-plugins-core 
 	sudo dnf copr enable awood/bat-extras
 	sudo dnf install bat-extras
@@ -45,11 +41,6 @@ neovim:
 	#sudo dnf install -y neovim
 	#Nvim-Plug
 
-# Chezmoi {{{1
-chezmoi-install-init:
-	#Installs to local bin
-	sh -c "$(curl -fsLS get.chezmoi.io/lb)" -- init --apply git@github.com:andmalc/dotfiles.git
-
 
 # Broot file browser {{{1
 broot:
@@ -72,6 +63,11 @@ eget:
 	mv eget ~/.local/bin
 
 #Eget installed apps {{{1
+
+# Chezmoi {{{2
+chezmoi-install-init:
+	eget https://github.com/twpayne/chezmoi --to ~/.local/bin/chezmoi
+	chezmoi init git@github.com:andmalc/dotfiles.git
 
 # Micro {{{2
 micro:
