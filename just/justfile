@@ -38,15 +38,12 @@ fish_shell:
 #	fisher install tuvistavie/fish-fastdir
 
 
-#Nvim {{{1
-nvim-nightly:
-	# Pulls in 51MB of dependencies
-	sudo dnf copr enable agriffis/neovim-nightly
+#Neovim {{{1
+neovim:
 	sudo dnf install --setopt install_weak_deps=False neovim python3-neovim
-
+	sh -c "curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 	#sudo dnf install -y neovim
 	#Nvim-Plug
-	sh -c "curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
 # Chezmoi {{{1
 chezmoi-install-init:
