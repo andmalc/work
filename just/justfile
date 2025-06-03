@@ -1,9 +1,15 @@
 # Prerequisites: just and fish
+# ssh setup: install & init chezmoi first, then download and add id_ed25519 to ~/.ssh from BW
+# install chezmoi before zellij to avoid replacing the zellij config file
 
 set shell := ["fish","-c"]
+user := env('USER')
 set ignore-comments
 
-# Add directories {{{1
+#First setup
+setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
+
+#Add directories {{{1
 directories:
 	if not test -d ~/.local/bin; mkdir -p ~/.local/bin; end
 	if not test -d ~/.local/share; mkdir -p ~/.local/share; end
@@ -11,52 +17,30 @@ directories:
 
 #Fedora console apps {{{1
 dnf-misc:
-	sudo dnf install -y micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank
-
-# Batextras
-bat extras:
-	sudo dnf install dnf-plugins-core 
-	sudo dnf copr enable awood/bat-extras
-	sudo dnf install bat-extras
-
+	sudo dnf install -y fish micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank
 
 #Fish config and Fisher plugin manager {{{1
-fish_shell:
-	sudo chsh -s /usr/bin/fish andmalc
+fish-config:
+	# Change shell to fish
+	sudo chsh -s /usr/bin/fish "{{user}}"
+
 	#Fisher install to ~/.config/fish/functions
 	curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 	fisher update
 
-#Fish plugins additional
-#fish_fisher_additional:
-#fish-fastdir
-#https://github.com/danhper/fish-fastdir
-#	fisher install tuvistavie/fish-fastdir
+	#Fish plugins additional
+	#fish_fisher_additional:
+	#fish-fastdir
+	#https://github.com/danhper/fish-fastdir
+	#	fisher install tuvistavie/fish-fastdir
 
 
 #Neovim {{{1
 neovim:
 	sudo dnf install --setopt install_weak_deps=False neovim python3-neovim
-	sh -c "curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
-	#sudo dnf install -y neovim
 	#Nvim-Plug
+	sh -c "curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
-
-# Broot file browser {{{1
-broot:
-	sudo dnf copr enable -y petersen/broot
-	sudo dnf update -y
-	sudo dnf install -y broot
-
-# Elvish shell {{{1
-elvish:
-	wget -O - https://dl.elv.sh/linux-386/elvish-HEAD.tar.gz | tar xzvf - -C ~/.local/bin  --show-transformed  --transform='s/-HEAD//'
-	#alternative curl -s -L <URL>
-
-# Bitwarden Appimage
-bitwarden:
-	#Desktop file and icon png should be in ~/.local/share/application via chezmoi
-	wget -O ~/.local/bin/bitwarden.appimage https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=appimage
 #Eget https://github.com/zyedidia/eget {{{1
 eget:
 	curl https://zyedidia.github.io/eget.sh | sh
@@ -77,5 +61,27 @@ micro:
 zellij:
 	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
 
+#Less Used {{{1
+# Broot file browser {{{2
+broot:
+	sudo dnf copr enable -y petersen/broot
+	sudo dnf update -y
+	sudo dnf install -y broot
+
+# Elvish shell {{{2
+elvish:
+	wget -O - https://dl.elv.sh/linux-386/elvish-HEAD.tar.gz | tar xzvf - -C ~/.local/bin  --show-transformed  --transform='s/-HEAD//'
+	#alternative curl -s -L <URL>
+
+# Bitwarden Appimage {{{2
+bitwarden:
+	#Desktop file and icon png should be in ~/.local/share/application via chezmoi
+	wget -O ~/.local/bin/bitwarden.appimage https://vault.bitwarden.com/download/?app=desktop&platform=linux&variant=appimage
+
+# Batextras {{{2
+bat extras:
+	sudo dnf install dnf-plugins-core 
+	sudo dnf copr enable awood/bat-extras
+	sudo dnf install bat-extras
 
 # vim: fdm=marker ft=make
