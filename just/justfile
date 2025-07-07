@@ -1,6 +1,7 @@
-# Prerequisites: just and fish
-# ssh setup: install & init chezmoi first, then download and add id_ed25519 to ~/.ssh from BW
+# Prerequisites: just, fish, git
+# ssh setup: download and add id_ed25519 to ~/.ssh from BW
 # install chezmoi before zellij to avoid replacing the zellij config file
+# Debian: in apt.conf.d file containing APT::Default-Release "/^testing(|-security|-updates)$/";
 
 set shell := ["fish","-c"]
 user := env('USER')
@@ -18,6 +19,10 @@ directories:
 #Fedora console apps {{{1
 dnf-misc:
 	sudo dnf install -y fish micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank
+
+# Debian console apps {{{1
+apt-misc:
+        sudo apt install -y micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo  yank
 
 #Fish config and Fisher plugin manager {{{1
 fish-config:
@@ -50,7 +55,7 @@ eget:
 
 # Chezmoi {{{2
 chezmoi-install-init:
-	eget https://github.com/twpayne/chezmoi --to ~/.local/bin/chezmoi
+	eget twpayne/chezmoi --to ~/.local/bin/chezmoi
 	chezmoi init git@github.com:andmalc/dotfiles.git
 
 # Micro {{{2
