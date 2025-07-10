@@ -1,14 +1,15 @@
-# Prerequisites: just, fish, git
+# Prerequisites: just, git
 # ssh setup: download and add id_ed25519 to ~/.ssh from BW
 # install chezmoi before zellij to avoid replacing the zellij config file
 # Debian: in apt.conf.d file containing APT::Default-Release "/^testing(|-security|-updates)$/";
+# Debian: keep bash as login shell. Install directories first then re-login.  Local bin will not be in path until dir is present on login.
 
-set shell := ["fish","-c"]
 user := env('USER')
 set ignore-comments
+export PATH := "~/.local/bin:" + env_var('PATH')
 
 #First setup
-setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
+#setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
 
 #Add directories {{{1
 directories:
@@ -16,13 +17,27 @@ directories:
 	if not test -d ~/.local/share; mkdir -p ~/.local/share; end
 	if not test -d ~/tmp; mkdir -p ~/tmp; end
 
+#Eget https://github.com/zyedidia/eget {{{1
+eget:
+	curl https://zyedidia.github.io/eget.sh | sh
+	mv eget ~/.local/bin
+
+#Chezmoi {{{1
+chezmoi:
+       eget twpayne/chezmoi --to ~/.local/bin/chezmoi
+       chezmoi init git@github.com:andmalc/dotfiles.git
+
+# Zellij {{{1
+zellij:
+	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
+
 #Fedora console apps {{{1
 dnf-misc:
 	sudo dnf install -y fish micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank
 
 # Debian console apps {{{1
 apt-misc:
-        sudo apt install -y micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo  yank
+        sudo apt --no-install-recommends install -y neovim micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo  yank
 
 #Fish config and Fisher plugin manager {{{1
 fish-config:
@@ -46,25 +61,9 @@ neovim:
 	#Nvim-Plug
 	sh -c "curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
-#Eget https://github.com/zyedidia/eget {{{1
-eget:
-	curl https://zyedidia.github.io/eget.sh | sh
-	mv eget ~/.local/bin
-
-#Eget installed apps {{{1
-
-# Chezmoi {{{2
-chezmoi-install-init:
-	eget twpayne/chezmoi --to ~/.local/bin/chezmoi
-	chezmoi init git@github.com:andmalc/dotfiles.git
-
-# Micro {{{2
+# Micro {{{1
 micro:
 	eget zyedidia/micro --upgrade-only --to ~/.local/bin/ 
-
-# Zellij {{{2
-zellij:
-	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
 
 #Less Used {{{1
 # Broot file browser {{{2
