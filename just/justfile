@@ -59,6 +59,7 @@ fish-config:
 neovim:
 	sudo dnf install --setopt install_weak_deps=False neovim python3-neovim
 	#Nvim-Plug
+	# requires git
 	sh -c "curl -fLo $HOME/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
 
 # Micro {{{1
@@ -87,5 +88,9 @@ bat extras:
 	sudo dnf install dnf-plugins-core 
 	sudo dnf copr enable awood/bat-extras
 	sudo dnf install bat-extras
+#Eza - ls alternative {{{2
+eza:
+	eget twpayne/chezmoi
 
 # vim: fdm=marker ft=make
+
