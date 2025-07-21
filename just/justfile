@@ -37,7 +37,7 @@ dnf-misc:
 
 # Debian console apps {{{1
 apt-misc:
-        sudo apt --no-install-recommends install -y neovim micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo  yank
+        sudo apt --no-install-recommends install -y neovim micro ugrep ripgrep fd-find wget duf mosh bat fzf kitty-terminfo yank tealdeer
 
 #Fish config and Fisher plugin manager {{{1
 fish-config:
