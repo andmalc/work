@@ -1,4 +1,9 @@
 # Prerequisites: just, git
+# Just: if not in pkg manager (Deb Bookworm)
+# 	curl -L https://just.systems/install.sh > /install-just.sh
+# 	chmod + install-just.sh
+#	./install-just.sh # Install just to ~/bin unless --to <path> is given
+
 # ssh setup: download and add id_ed25519 to ~/.ssh from BW
 # install chezmoi before zellij to avoid replacing the zellij config file
 # Debian: in apt.conf.d file containing APT::Default-Release "/^testing(|-security|-updates)$/";
@@ -8,14 +13,16 @@ user := env('USER')
 set ignore-comments
 export PATH := "~/.local/bin:" + env_var('PATH')
 
-#First setup
-#setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
-
 #Add directories {{{1
-directories:
+a-directories:
 	if not test -d ~/.local/bin; mkdir -p ~/.local/bin; end
 	if not test -d ~/.local/share; mkdir -p ~/.local/share; end
 	if not test -d ~/tmp; mkdir -p ~/tmp; end
+	echo "Reboot to update PATH to include local/bin
+
+#First setup
+#setup: dnf-misc fish-config neovim eget chezmoi zellij 
+
 
 #Eget https://github.com/zyedidia/eget {{{1
 eget:
@@ -54,6 +61,8 @@ fish-config:
 	#https://github.com/danhper/fish-fastdir
 	#	fisher install tuvistavie/fish-fastdir
 
+	# Just completions
+	just --completions fish > ~/.config/fish/completions/just.fish
 
 #Neovim {{{1
 neovim:
