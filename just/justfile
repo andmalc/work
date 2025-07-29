@@ -6,10 +6,14 @@
 
 user := env('USER')
 set ignore-comments
-export PATH := "~/.local/bin:" + env_var('PATH')
+export PATH := env('HOME') + "/.local/bin:" + env('PATH')
+set shell := ["fish", "-c"]
+
+debug:
+	env('HOME') + "/.local/bin/chezmoi" apply .config/fish/config.fish
 
 #First setup
-#setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
+setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
 
 #Add directories {{{1
 directories:
@@ -25,7 +29,8 @@ eget:
 #Chezmoi {{{1
 chezmoi:
        eget twpayne/chezmoi --to ~/.local/bin/chezmoi
-       chezmoi init git@github.com:andmalc/dotfiles.git
+	chezmoi init git@github.com:andmalc/dotfiles.git
+	env('HOME') + "/.local/bin/chezmoi" apply .config/fish/config.fish
 
 # Zellij {{{1
 zellij:
@@ -73,10 +78,6 @@ broot:
 	sudo dnf update -y
 	sudo dnf install -y broot
 
-# Elvish shell {{{2
-elvish:
-	wget -O - https://dl.elv.sh/linux-386/elvish-HEAD.tar.gz | tar xzvf - -C ~/.local/bin  --show-transformed  --transform='s/-HEAD//'
-	#alternative curl -s -L <URL>
 
 # Bitwarden Appimage {{{2
 bitwarden:
