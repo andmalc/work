@@ -5,23 +5,23 @@
 #	./install-just.sh # Install just to ~/bin unless --to <path> is given
 
 # ssh setup: download and add id_ed25519 to ~/.ssh from BW
-# install chezmoi before zellij to avoid replacing the zellij config file
+# eval `ssh-agent`
+# ssh-add
+
 # Debian: in apt.conf.d file containing APT::Default-Release "/^testing(|-security|-updates)$/";
 # Debian: keep bash as login shell. Install directories first then re-login.  Local bin will not be in path until dir is present on login.
+# install chezmoi before zellij to avoid replacing the zellij config file
 
-user := env('USER')
-set ignore-comments
-export PATH := env('HOME') + "/.local/bin:" + env('PATH')
-set shell := ["fish", "-c"]
-
-debug:
-	env('HOME') + "/.local/bin/chezmoi" apply .config/fish/config.fish
+#user := env('USER')
+#set ignore-comments
+#export PATH := env('HOME') + "/.local/bin:" + env('PATH')
+#set shell := ["fish", "-c"]
 
 #First setup
-setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
+#setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
 
 #Add directories {{{1
-a-directories:
+directories:
 	if not test -d ~/.local/bin; mkdir -p ~/.local/bin; end
 	if not test -d ~/.local/share; mkdir -p ~/.local/share; end
 	if not test -d ~/tmp; mkdir -p ~/tmp; end
@@ -38,9 +38,9 @@ eget:
 
 #Chezmoi {{{1
 chezmoi:
-       eget twpayne/chezmoi --to ~/.local/bin/chezmoi
+    eget twpayne/chezmoi --to ~/.local/bin/chezmoi
 	chezmoi init git@github.com:andmalc/dotfiles.git
-	env('HOME') + "/.local/bin/chezmoi" apply .config/fish/config.fish
+	chezmoi apply .config/fish/config.fish
 
 # Zellij {{{1
 zellij:
