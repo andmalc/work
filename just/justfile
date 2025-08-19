@@ -12,7 +12,7 @@
 # Debian: keep bash as login shell. Install directories first then re-login.  Local bin will not be in path until dir is present on login.
 # install chezmoi before zellij to avoid replacing the zellij config file
 
-#user := env('USER')
+user := env('USER')
 #set ignore-comments
 #export PATH := env('HOME') + "/.local/bin:" + env('PATH')
 #set shell := ["fish", "-c"]
@@ -38,7 +38,7 @@ eget:
 
 #Chezmoi {{{1
 chezmoi:
-    eget twpayne/chezmoi --to ~/.local/bin/chezmoi
+	eget twpayne/chezmoi --to ~/.local/bin/chezmoi
 	chezmoi init git@github.com:andmalc/dotfiles.git
 	chezmoi apply .config/fish/config.fish
 
@@ -55,10 +55,8 @@ apt-misc:
         sudo apt --no-install-recommends install -y neovim micro ugrep ripgrep fd-find wget duf mosh bat fzf kitty-terminfo yank tealdeer
 
 #Fish config and Fisher plugin manager {{{1
-fish-config:
-	# Change shell to fish
-	sudo chsh -s /usr/bin/fish "{{user}}"
-
+fisher:
+	#!/usr/bin/fish
 	#Fisher install to ~/.config/fish/functions
 	curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source && fisher install jorgebucaran/fisher
 	fisher update
@@ -68,7 +66,9 @@ fish-config:
 	#fish-fastdir
 	#https://github.com/danhper/fish-fastdir
 	#	fisher install tuvistavie/fish-fastdir
-
+fish-config:
+	# Change shell to fish
+	sudo chsh -s /usr/bin/fish "{{user}}"
 	# Just completions
 	just --completions fish > ~/.config/fish/completions/just.fish
 
