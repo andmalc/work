@@ -48,7 +48,7 @@ zellij:
 
 #Fedora console apps {{{1
 dnf-misc:
-	sudo dnf install -y fish micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank
+	sudo dnf install -y fish micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank wcurl
 
 # Debian console apps {{{1
 apt-misc:
