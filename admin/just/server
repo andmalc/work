@@ -1,0 +1,17 @@
+
+
+#Timezone
+timezone:
+	sudo timedatectl set-timezone America/Toronto
+
+#suspend
+/etc/systemd/logind.conf
+	[Login]
+	IdleAction=suspend
+	IdleActionSec=3600
+
+sudo systemctl restart systemd-logind
+
+
+
+

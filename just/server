@@ -1,5 +1,0 @@
-
-
-#Timezone
-timezone:
-	sudo timedatectl set-timezone America/Toronto
