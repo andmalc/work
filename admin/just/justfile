@@ -105,5 +105,10 @@ bat extras:
 eza:
 	eget twpayne/chezmoi
 
-# vim: fdm=marker ft=make
+#To Do {{{1
 
+##Atuin shell and desktop {{{2
+# https://docs.atuin.sh/guide/installation
+# Install with shell plugins for fish and nushell
+
+# vim: fdm=marker ft=make
