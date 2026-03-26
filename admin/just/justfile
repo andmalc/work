@@ -17,8 +17,13 @@ user := env('USER')
 #export PATH := env('HOME') + "/.local/bin:" + env('PATH')
 #set shell := ["fish", "-c"]
 
+#Git Files
+git-files:
+	git clone git@github.com:andmalc/work.git
+	git clone git@github.com:andmalc/notes.git
+
 #First setup
-#setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
+setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
 
 #Add directories {{{1
 directories:
@@ -27,9 +32,9 @@ directories:
 	if not test -d ~/tmp; mkdir -p ~/tmp; end
 	echo "Reboot to update PATH to include local/bin
 
-#First setup
-#setup: dnf-misc fish-config neovim eget chezmoi zellij 
-
+#Fedora console apps {{{1
+dnf-misc:
+	sudo dnf install -y fish micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank wcurl
 
 #Eget https://github.com/zyedidia/eget {{{1
 eget:
@@ -45,10 +50,6 @@ chezmoi:
 # Zellij {{{1
 zellij:
 	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
-
-#Fedora console apps {{{1
-dnf-misc:
-	sudo dnf install -y fish micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank wcurl
 
 # Debian console apps {{{1
 apt-misc:
