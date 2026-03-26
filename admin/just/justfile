@@ -12,10 +12,10 @@
 # Debian: keep bash as login shell. Install directories first then re-login.  Local bin will not be in path until dir is present on login.
 # install chezmoi before zellij to avoid replacing the zellij config file
 
+set shell := ["fish", "-c"]
 user := env('USER')
 #set ignore-comments
 #export PATH := env('HOME') + "/.local/bin:" + env('PATH')
-#set shell := ["fish", "-c"]
 
 #Git Files
 git-files:
@@ -30,7 +30,11 @@ directories:
 	if not test -d ~/.local/bin; mkdir -p ~/.local/bin; end
 	if not test -d ~/.local/share; mkdir -p ~/.local/share; end
 	if not test -d ~/tmp; mkdir -p ~/tmp; end
-	echo "Reboot to update PATH to include local/bin
+	echo "Reboot to update PATH to include local/bin"
+
+# Debian console apps {{{1
+apt-misc:
+        sudo apt --no-install-recommends install -y neovim micro ugrep ripgrep fd-find wget duf mosh bat fzf kitty-terminfo yank tealdeer
 
 #Fedora console apps {{{1
 dnf-misc:
@@ -45,15 +49,26 @@ eget:
 chezmoi:
 	eget twpayne/chezmoi --to ~/.local/bin/chezmoi
 	chezmoi init git@github.com:andmalc/dotfiles.git
-	chezmoi apply .config/fish/config.fish
+	chezmoi apply
 
-# Zellij {{{1
+#Eget https://github.com/zyedidia/eget {{{1
+eget:
+	curl https://zyedidia.github.io/eget.sh | sh
+	mv eget ~/.local/bin
+
+# Zellij {{{
 zellij:
 	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
 
+<<<<<<< HEAD
 # Debian console apps {{{1
 apt-misc:
         sudo apt --no-install-recommends install -y neovim micro ugrep ripgrep fd-find wget duf mosh bat fzf kitty-terminfo yank tealdeer
+=======
+#Fedora console apps {{{1
+dnf-misc:
+	sudo dnf install -y fish micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank wcurl
+>>>>>>> 012ee705f87e60566372f13ddaf49310903edc58
 
 #Fish config and Fisher plugin manager {{{1
 fisher:
