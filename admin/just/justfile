@@ -1,4 +1,4 @@
-# Prerequisites: just, git
+# Prerequisites: just, git, fish
 # Just: if not in pkg manager (Deb Bookworm)
 # 	curl -L https://just.systems/install.sh > /install-just.sh
 # 	chmod + install-just.sh
@@ -15,7 +15,7 @@
 set shell := ["fish", "-c"]
 user := env('USER')
 #set ignore-comments
-#export PATH := env('HOME') + "/.local/bin:" + env('PATH')
+export PATH := env('HOME') + "/.local/bin:" + env('PATH')
 
 #Git Files
 git-files:
@@ -23,7 +23,7 @@ git-files:
 	git clone git@github.com:andmalc/notes.git
 
 #First setup
-setup: directories dnf-misc fish-config neovim eget chezmoi zellij 
+setup: directories dnf-misc neovim eget chezmoi zellij fish-config
 
 #Add directories {{{1
 directories:
@@ -51,24 +51,10 @@ chezmoi:
 	chezmoi init git@github.com:andmalc/dotfiles.git
 	chezmoi apply
 
-#Eget https://github.com/zyedidia/eget {{{1
-eget:
-	curl https://zyedidia.github.io/eget.sh | sh
-	mv eget ~/.local/bin
-
 # Zellij {{{
 zellij:
 	eget --upgrade-only --to ~/.local/bin/zellij zellij-org/zellij
 
-<<<<<<< HEAD
-# Debian console apps {{{1
-apt-misc:
-        sudo apt --no-install-recommends install -y neovim micro ugrep ripgrep fd-find wget duf mosh bat fzf kitty-terminfo yank tealdeer
-=======
-#Fedora console apps {{{1
-dnf-misc:
-	sudo dnf install -y fish micro ugrep fd-find wget duf mosh bat fzf kitty-terminfo tldr yank wcurl
->>>>>>> 012ee705f87e60566372f13ddaf49310903edc58
 
 #Fish config and Fisher plugin manager {{{1
 fisher:
